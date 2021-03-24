@@ -1,0 +1,57 @@
+.cinemaImg{
+    width: 245px;
+}
+.movieSelect{
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+    max-width:284px;
+    height:284px;
+    }
+
+.goodsSelect{
+        background-color: white;
+        background-repeat: no-repeat;
+        background-size:cover;
+        height: 331px;
+        width: 245px;
+        }
+
+#bgCinemaImg1{
+    background-image: url('../images/REV_poster_B-final 1.png');
+}
+#bgCinemaImg2{
+    background-image: url('../images/516538 1.png');
+}
+#bgCinemaImg3{
+    background-image: url('../images/5444118-784761 1.png');
+}
+#bgCinemaImg4{
+    background-image: url('../images/98823 1.png');
+}
+#goodsPic1{
+    background-image: url('../images/c8fd26f982-2 2.png');
+}
+#goodsPic2{
+    background-image: url('../images/HTB1uSiFXOfrK1RjSspbq6A4pFXao 1.png');
+}
+#goodsPic3{
+    background-image: url('../images/40073568b 1.png');
+}
+
+#logoInno{
+    padding:20px;
+    background-color: black;
+    display: inline-block;
+}
+#imgPresent{
+    width: 302px;
+    height: 303px;
+}
+#backPoster{
+    height: 527px;
+    width: 414px;
+    background-image: url('../images/krists-luhaers-AtPWnYNDJnM-unsplash.png');
+
+}
