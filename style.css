@@ -1,3 +1,22 @@
+
+
+header{
+    display:inline-block;
+    background-color: blue;
+    background-image: url('../images/bgpictureheader.png');
+    background-repeat: no-repeat;
+    background-size:cover;
+    box-sizing:border-box;
+    font-family: IBM Plex Sans;
+    font-style: normal;
+    color: white;
+    
+}
+a {
+    color: inherit;
+    text-decoration:none;
+  }
+
 .cinemaImg{
     width: 245px;
 }
@@ -42,8 +61,8 @@
 
 #logoInno{
     padding:20px;
-    background-color: black;
     display: inline-block;
+    floating: left;
 }
 #imgPresent{
     width: 302px;
@@ -53,5 +72,12 @@
     height: 527px;
     width: 414px;
     background-image: url('../images/krists-luhaers-AtPWnYNDJnM-unsplash.png');
+
+}
+
+#imgMap{
+    max-height: 421px;
+    max-width: 973px;
+    border-radius: 20px;
 
 }
