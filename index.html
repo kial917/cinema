@@ -86,11 +86,11 @@
                 </div>
                 <nav role="navigation">
                     <ul class="row2">
-                        <li style="display: inline;"><a href="#">EVENT DETAILS</a></li>
-                        <li style="display: inline;"><a href="#">SPEAKERS</a></li>
-                        <li style="display: inline;"><a href="#">SPONSORS</a></li>
-                        <li style="display: inline;"><a href="#">PAST EVENTS</a></li>
-                        <li style="display: inline;"><a href="#">CONTACT</a></li>
+                        <li style="display: inline;"><a href="#advant-section">ADVANTAGES</a></li>
+                        <li style="display: inline;"><a href="#choose-section">CHOOSE A MOVIE</a></li>
+                        <li style="display: inline;"><a href="#movie-section">RIGHT NOW IN CINEMA</a></li>
+                        <li style="display: inline;"><a href="#feedback-section">FEEDBACK</a></li>
+                        <li style="display: inline;"><a href="#contact-section">CONTACT</a></li>
                     </ul>
                 </nav>
             </div>
@@ -113,12 +113,33 @@
                     dolore
                     magna aliqua. Ut enim ad minim veniam.</em>
             </p>
+            <ol reversed start="F" type="A">
+                <li>
+                    <p>Первая строка</p>
+                </li>
+                <li>
+                    <p>Вторая строка</p>
+                </li>
+                <li>
+                    <p>Третья строка</p>
+                    <ol>
+                        <li><p>Я здесь</p></li>
+                        <li><p>Он там</p></li>
+                        <li><p>Никого не видел</p></li>
+                    </ol>
+                <li>
+                    <p>Четвертая строка</p>
+                </li>
+                <li>
+                    <p>Пятая строка</p>
+                </li>
+            </ol>
             <p><b>Duis aute irure dolor</b> in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
                 pariatur.
                 Excepteur sint occaecat cupidatat non proident, sunt.
             </p>
         </div>
-        <section>
+        <section id="advant-section">
             <div>
                 <h3>Почему мы?</h3>
             </div>
@@ -177,7 +198,7 @@
                 </p>
             </div>
         </section>
-        <section>
+        <section id="choose-section">
             <h3>Выберите фильм</h3>
             <p>Начало сеанса Название фильма Жанр <br>
                 10:00 <a href="https://www.kinopoisk.ru/film/838/" target="_blank">Человек-паук</a> Фантастика, боевик,
@@ -193,7 +214,7 @@
                 dolore magna aliqua. Ut enim ad minim veniam.
             </p>
         </section>
-        <section>
+        <section id="present-section">
             <img id="imgPresent" src="./images/pic-present.png" alt="Изображение подарка" title="красивый подарок">
             <h3>Подарок каждому!</h3>
             <p>
@@ -213,7 +234,7 @@
             </p>
             <span>Получить подарок</span>
         </section>
-        <section>
+        <section id="movie-section">
             <h3>Фильмы</h3>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -298,20 +319,23 @@
                 </li>
             </ul>
         </section>
-        <section class="blank" id="backPoster">
-            <h3>Обратная связь</h3>
-            <span>Полное имя</span>
-            <span>Номер места</span>
-            <span>Напишите свой отзыв</span>
-            <p>Я согласен на обработку своих персональных данных</p>
-            <h4>послать</h4>
+        <section  id="feedback-section">
+            <div class="blank" id="backPoster">
+                <h3>Обратная связь</h3>
+                <span>Полное имя</span>
+                <span>Номер места</span>
+                <span>Напишите свой отзыв</span>
+                <p>Я согласен на обработку своих персональных данных</p>
+                <h4>послать</h4>
+            </div>
         </section>
+
         <section>
             <img id="imgMap" src="./images/pic-map.png" alt="карта" title="Местоположение университета">
         </section>
     </main>
 
-    <footer role="contentinfo">
+    <footer role="contentinfo" id="contact-section">
         <div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                 et

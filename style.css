@@ -15,6 +15,16 @@ a {
     text-decoration: none;
 }
 
+ol li {
+    color: blue;
+}
+
+li p {
+    color: black;
+    margin: 0;
+}
+
+
 .cinemaImg {
     width: 245px;
 }
