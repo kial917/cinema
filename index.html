@@ -123,9 +123,15 @@
                 <li>
                     <p>Третья строка</p>
                     <ol>
-                        <li><p>Я здесь</p></li>
-                        <li><p>Он там</p></li>
-                        <li><p>Никого не видел</p></li>
+                        <li>
+                            <p>Я здесь</p>
+                        </li>
+                        <li>
+                            <p>Он там</p>
+                        </li>
+                        <li>
+                            <p>Никого не видел</p>
+                        </li>
                     </ol>
                 <li>
                     <p>Четвертая строка</p>
@@ -200,19 +206,56 @@
         </section>
         <section id="choose-section">
             <h3>Выберите фильм</h3>
-            <p>Начало сеанса Название фильма Жанр <br>
-                10:00 <a href="https://www.kinopoisk.ru/film/838/" target="_blank">Человек-паук</a> Фантастика, боевик,
-                приключения<br>
-                12:00 <a href="https://www.kinopoisk.ru/film/1122114/" target="_blank">Собачья жизнь 2</a> Фэнтэзи,
-                драма, комедия<br>
-                14:00 <a href="https://www.kinopoisk.ru/film/846824/" target="_blank">История игрушек 4</a> Мультфильм,
-                фэнтэзи, комедия<br>
-                16:00 <a href="https://www.kinopoisk.ru/film/693730/" target="_blank">Люди в чёрном: Интэрнэшнл</a>
-                Фантастика, боевик,
-                комедия</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam.
-            </p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Начало сеанса</th>
+                        <th>Название фильма</th>
+                        <th>Жанр</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>-</td>
+                        <td>10:00</td>
+                        <td><a href="https://www.kinopoisk.ru/film/838/" target="_blank">Человек-паук</a> </td>
+                        <td>Фантастика, боевик,
+                            приключения</td>
+                    </tr>
+                    <tr>
+                        <td>-</td>
+                        <td>12:00</td>
+                        <td><a href="https://www.kinopoisk.ru/film/1122114/" target="_blank">Собачья жизнь 2</a></td>
+                        <td>Фэнтэзи, драма, комедия</td>
+                    </tr>
+                    <tr>
+                        <td>-</td>
+                        <td>14:00</td>
+                        <td><a href="https://www.kinopoisk.ru/film/846824/" target="_blank">История игрушек 4</a></td>
+                        <td>Мультфильм, фэнтэзи, комедия</td>
+                    </tr>
+                    <tr>
+                        <td>-</td>
+                        <td>16:00</td>
+                        <td><a href="https://www.kinopoisk.ru/film/693730/" target="_blank">Люди в чёрном:
+                                Интэрнэшнл</a>
+                        </td>
+                        <td>Фантастика, боевик, комедия</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <td colspan="4">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et
+                            dolore magna aliqua. Ut enim ad minim veniam.
+                        </p>
+                    </td>
+                </tfoot>
+            </table>
+
+
         </section>
         <section id="present-section">
             <img id="imgPresent" src="./images/pic-present.png" alt="Изображение подарка" title="красивый подарок">
@@ -319,7 +362,7 @@
                 </li>
             </ul>
         </section>
-        <section  id="feedback-section">
+        <section id="feedback-section">
             <div class="blank" id="backPoster">
                 <h3>Обратная связь</h3>
                 <span>Полное имя</span>
@@ -346,11 +389,13 @@
         </div>
         <div>
             <h3>SITE</h3>
-            <span>EVENT DETAILS</span>
-            <span>SPEAKERS</span>
-            <span>SPONSORS</span>
-            <span>PAST EVENTS</span>
-            <span>CONTACT</span>
+            <ul class="row2">
+                <li style="display: inline;"><a href="#advant-section">ADVANTAGES</a></li>
+                <li style="display: inline;"><a href="#choose-section">CHOOSE A MOVIE</a></li>
+                <li style="display: inline;"><a href="#movie-section">RIGHT NOW IN CINEMA</a></li>
+                <li style="display: inline;"><a href="#feedback-section">FEEDBACK</a></li>
+                <li style="display: inline;"><a href="#contact-section">CONTACT</a></li>
+            </ul>
 
             <div>
                 <h3>CONTACT</h3>

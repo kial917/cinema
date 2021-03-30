@@ -24,6 +24,16 @@ li p {
     margin: 0;
 }
 
+table {
+    border-collapse: collapse;
+    margin-left: 137px;
+    margin-right: 137px;
+    text-align: center;
+}
+
+td, th {
+    border: 1px solid black;
+}
 
 .cinemaImg {
     width: 245px;
