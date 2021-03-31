@@ -24,6 +24,10 @@ li p {
     margin: 0;
 }
 
+form {
+    color: white;
+}
+
 table {
     border-collapse: collapse;
     margin-left: 137px;
