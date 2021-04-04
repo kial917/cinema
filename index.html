@@ -113,7 +113,7 @@
                     dolore
                     magna aliqua. Ut enim ad minim veniam.</em>
             </p>
-            <ol reversed start="F" type="A">
+            <ol reversed start="6" type="1">
                 <li>
                     <p>Первая строка</p>
                 </li>
@@ -246,12 +246,15 @@
                     </tr>
                 </tbody>
                 <tfoot>
-                    <td colspan="4">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et
-                            dolore magna aliqua. Ut enim ad minim veniam.
-                        </p>
-                    </td>
+                    <tr>
+                        <td colspan="4">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut
+                                labore et
+                                dolore magna aliqua. Ut enim ad minim veniam.
+                            </p>
+                        </td>
+                    </tr>
                 </tfoot>
             </table>
 
@@ -373,14 +376,14 @@
                 </div>
                 <div>
                     <label for="seatnumber" class="visuallyhidden">Номер места</label>
-                    <select name="seatnumber" id="seatnumber" required>
+                    <select name="seatnumber" id="seatnumber" size="1">
+                        <option selected>Выберите место</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
                         <option value="4">4</option>
                         <option value="5">5</option>
                         <option value="6">6</option>
-                        <option value="" selected>Номер места</option>
                     </select>
                 </div>
                 <div>
@@ -393,8 +396,8 @@
                 </div>
 
                 <button type="submit">
-                        <p>послать</p>
-                    </button>
+                    послать
+                </button>
             </form>
         </section>
 
