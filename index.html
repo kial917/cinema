@@ -207,10 +207,10 @@
         <section id="choose-section">
             <h3>Выберите фильм</h3>
 
-            <table>
+            <table class="block03__table">
                 <thead>
                     <tr>
-                        <td></td>
+                        <th>-</th>
                         <th>Начало сеанса</th>
                         <th>Название фильма</th>
                         <th>Жанр</th>
@@ -385,14 +385,16 @@
                 </div>
                 <div>
                     <label for="feedback-area" class="visuallyhidden">Поле для текста отзыва</label>
-                    <textarea id="feedback-area" name="feedback-area" rows="10" cols="15" placeholder="Напишите свой отзыв"
-                        required></textarea></div>
+                    <textarea id="feedback-area" name="feedback-area" rows="10" cols="15"
+                        placeholder="Напишите свой отзыв" required></textarea></div>
                 <div>
-                    <input id="agreement" type="checkbox">
+                    <input id="agreement" type="checkbox" required>
                     <label for="agreement">Я согласен на обработку своих персональных данных</label>
                 </div>
 
-                <div><input type="submit" value="послать"></div>
+                <button type="submit">
+                        <p>послать</p>
+                    </button>
             </form>
         </section>
 

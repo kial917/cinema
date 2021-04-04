@@ -1,3 +1,7 @@
+body {
+    font-family: IBM Plex Sans;
+}
+
 header {
     display: block;
     background-color: blue;
@@ -28,15 +32,41 @@ form {
     color: white;
 }
 
-table {
-    border-collapse: collapse;
-    margin-left: 137px;
-    margin-right: 137px;
-    text-align: center;
-}
-
 td, th {
     border: 1px solid black;
+}
+
+form button {
+    height: 57px;
+    width: 344px;
+    background: #A3CC40;
+    border-radius: 6px;
+}
+
+form button p{
+font-family: IBM Plex Sans;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+align-items: center;
+text-align: center;
+color: #FFFFFF;
+margin: 0 auto;
+}
+
+
+.block03__table {
+    border-collapse: collapse;
+}
+
+.block03__table th {
+    background: #A3CC40;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.3;
+    color: #FFFFFF;
+    padding: 10px 20px;
 }
 
 .cinemaImg {
