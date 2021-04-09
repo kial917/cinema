@@ -44,9 +44,11 @@ td, th {
 
 table {
     border-collapse: collapse;
-    margin: auto 138px;
+    margin: 0 auto;
     color: #FFFFFF;
-    table-layout: fixed;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 0px auto 30px;
 }
 
 .block03__table th {
@@ -74,11 +76,40 @@ table {
 #block03__table__secondcol {
     width: 210px;
 }
+
 #block03__table__thirdcol {
     width: 220px;
 }
+
 #block03__table__fourcol {
     width: 272px;
+}
+
+.block03__title {
+    width: 849px;
+    margin: 0px auto 84px;
+}
+
+.block03__title h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 62px;
+    color: #A3CC40;
+    margin: inherit;
+}
+
+.block03__parag {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 1.5;
+    text-align: center;
+    color: #333333;
+    width: 539px;
+    margin: 0px auto 30px;
+    padding: 0px 10px 40px;
+    vertical-align: top;
 }
 
 form button {
