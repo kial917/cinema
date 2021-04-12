@@ -1,43 +1,50 @@
 /* ibm-plex-sans-100*/
+
 @font-face {
     font-family: 'IBM Plex Sans';
     font-style: normal;
     font-weight: 100;
-    src: url('../fonts/IBMPlexSans-Thin.ttf') format('ttf'); /* IE9 Compat Modes */
+    src: url('../fonts/IBMPlexSans-Thin.ttf') format('ttf');
+    /* IE9 Compat Modes */
     /*src: local(''),
          url('../fonts/ibm-plex-sans-v8-latin-100.eot?#iefix') format('embedded-opentype'), 
          url('../fonts/ibm-plex-sans-v8-latin-100.woff2') format('woff2'), 
          url('../fonts/ibm-plex-sans-v8-latin-100.woff') format('woff'), 
          url('../fonts/ibm-plex-sans-v8-latin-100.ttf') format('truetype'), 
          url('../fonts/ibm-plex-sans-v8-latin-100.svg#IBMPlexSans') format('svg');  */
-         
-  }
-  /* ibm-plex-sans-regular*/
-  @font-face {
+}
+
+/* ibm-plex-sans-regular*/
+
+@font-face {
     font-family: 'IBM Plex Sans';
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/IBMPlexSans-Regular.ttf') format('ttf'); /* IE9 Compat Modes */
+    src: url('../fonts/IBMPlexSans-Regular.ttf') format('ttf');
+    /* IE9 Compat Modes */
     /*src: local(''),
          url('../fonts/ibm-plex-sans-v8-latin-regular.eot?#iefix') format('embedded-opentype'), 
          url('../fonts/ibm-plex-sans-v8-latin-regular.woff2') format('woff2'),
          url('../fonts/ibm-plex-sans-v8-latin-regular.woff') format('woff'), 
          url('../fonts/ibm-plex-sans-v8-latin-regular.ttf') format('truetype'), 
          url('../fonts/ibm-plex-sans-v8-latin-regular.svg#IBMPlexSans') format('svg'); */
-  }
-  /* ibm-plex-sans-600 */
-  @font-face {
+}
+
+/* ibm-plex-sans-600 */
+
+@font-face {
     font-family: 'IBM Plex Sans';
     font-style: normal;
     font-weight: 600;
-    src: url('../fonts/IBMPlexSans-Medium.ttf') format('ttf'); /* IE9 Compat Modes */
+    src: url('../fonts/IBMPlexSans-Medium.ttf') format('ttf');
+    /* IE9 Compat Modes */
     /*src: local(''),
          url('../fonts/ibm-plex-sans-v8-latin-600.eot?#iefix') format('embedded-opentype'), 
          url('../fonts/ibm-plex-sans-v8-latin-600.woff2') format('woff2'), 
          url('../fonts/ibm-plex-sans-v8-latin-600.woff') format('woff'), 
          url('../fonts/ibm-plex-sans-v8-latin-600.ttf') format('truetype'), 
          url('../fonts/ibm-plex-sans-v8-latin-600.svg#IBMPlexSans') format('svg');  */
-  }
+}
 
 html {
     font-family: IBM Plex Sans;
@@ -50,7 +57,6 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     box-sizing: border-box;
-    
     font-style: normal;
     color: white;
 }
@@ -74,7 +80,6 @@ form {
 }
 
 td, th {
-    
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -90,6 +95,9 @@ table {
     overflow: hidden;
     border-radius: 10px;
     margin: 0px auto 30px;
+    width: 849px;
+    height: 225px;
+    table-layout: fixed;
 }
 
 .block03__table th {
@@ -114,17 +122,17 @@ table {
     text-align: center;
 }
 
-#block03__table__secondcol {
+/* #block03__table__secondcol {
     width: 210px;
-}
+} */
 
-#block03__table__thirdcol {
+/* #block03__table__thirdcol {
     width: 220px;
-}
+} */
 
-#block03__table__fourcol {
+/* #block03__table__fourcol {
     width: 272px;
-}
+} */
 
 .block03__title {
     width: 849px;
@@ -158,7 +166,6 @@ form button {
     width: 344px;
     background: #A3CC40;
     border-radius: 6px;
-    
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
