@@ -4,14 +4,9 @@
     font-family: 'IBM Plex Sans';
     font-style: normal;
     font-weight: 100;
-    src: url('../fonts/IBMPlexSans-Thin.ttf') format('ttf');
+    src: url('../fonts/IBMPlexSans-Thin.ttf') format('truetype');
     /* IE9 Compat Modes */
-    /*src: local(''),
-         url('../fonts/ibm-plex-sans-v8-latin-100.eot?#iefix') format('embedded-opentype'), 
-         url('../fonts/ibm-plex-sans-v8-latin-100.woff2') format('woff2'), 
-         url('../fonts/ibm-plex-sans-v8-latin-100.woff') format('woff'), 
-         url('../fonts/ibm-plex-sans-v8-latin-100.ttf') format('truetype'), 
-         url('../fonts/ibm-plex-sans-v8-latin-100.svg#IBMPlexSans') format('svg');  */
+    src: local(''), url('../fonts/Ibmplexsansthin.woff') format('woff'), url('../fonts/Ibmplexsansthin.woff2') format('woff2')
 }
 
 /* ibm-plex-sans-regular*/
@@ -20,14 +15,9 @@
     font-family: 'IBM Plex Sans';
     font-style: normal;
     font-weight: 400;
-    src: url('../fonts/IBMPlexSans-Regular.ttf') format('ttf');
+    src: url('../fonts/IBMPlexSans-Regular.ttf') format('truetype');
     /* IE9 Compat Modes */
-    /*src: local(''),
-         url('../fonts/ibm-plex-sans-v8-latin-regular.eot?#iefix') format('embedded-opentype'), 
-         url('../fonts/ibm-plex-sans-v8-latin-regular.woff2') format('woff2'),
-         url('../fonts/ibm-plex-sans-v8-latin-regular.woff') format('woff'), 
-         url('../fonts/ibm-plex-sans-v8-latin-regular.ttf') format('truetype'), 
-         url('../fonts/ibm-plex-sans-v8-latin-regular.svg#IBMPlexSans') format('svg'); */
+    src: local(''), url('../fonts/Ibmplexsans.woff') format('woff'), url('../fonts/Ibmplexsans.woff2') format('woff2')
 }
 
 /* ibm-plex-sans-600 */
@@ -36,14 +26,9 @@
     font-family: 'IBM Plex Sans';
     font-style: normal;
     font-weight: 600;
-    src: url('../fonts/IBMPlexSans-Medium.ttf') format('ttf');
+    src: url('../fonts/IBMPlexSans-Medium.ttf') format('truetype');
     /* IE9 Compat Modes */
-    /*src: local(''),
-         url('../fonts/ibm-plex-sans-v8-latin-600.eot?#iefix') format('embedded-opentype'), 
-         url('../fonts/ibm-plex-sans-v8-latin-600.woff2') format('woff2'), 
-         url('../fonts/ibm-plex-sans-v8-latin-600.woff') format('woff'), 
-         url('../fonts/ibm-plex-sans-v8-latin-600.ttf') format('truetype'), 
-         url('../fonts/ibm-plex-sans-v8-latin-600.svg#IBMPlexSans') format('svg');  */
+    src: local(''), url('../fonts/Ibmplexsansmedium.woff') format('woff'), url('../fonts/Ibmplexsansmedium.woff2') format('woff2')
 }
 
 html {
