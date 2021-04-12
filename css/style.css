@@ -96,7 +96,6 @@ table {
     border-radius: 10px;
     margin: 0px auto 30px;
     width: 849px;
-    height: 225px;
     table-layout: fixed;
 }
 
@@ -109,12 +108,12 @@ table {
     padding: 10px;
 }
 
-.block03__table__greyrow {
-    background-color: #4C4D4F;
+.block03__table tr td {
+    background: #373737;
 }
 
-.block03__table__blackrow {
-    background-color: #373737;
+.block03__table tr:nth-child(2n) td {
+    background: #4C4D4F;
 }
 
 .block03__table__firstcol {
