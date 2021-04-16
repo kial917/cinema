@@ -249,3 +249,8 @@ form button {
     max-width: 973px;
     border-radius: 20px;
 }
+
+.block03__table__firstcol:hover svg path {
+    fill: #A3CC40;
+    transition: all .8s ease;
+}
