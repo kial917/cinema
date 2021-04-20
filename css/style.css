@@ -33,22 +33,188 @@
 
 html {
     font-family: IBM Plex Sans;
+    
+}
+
+body {
+    max-width: 1920px;
 }
 
 header {
     display: block;
-    background-color: blue;
-    background-image: url('../images/bg-pic-header.png');
-    background-repeat: no-repeat;
-    background-size: cover;
     box-sizing: border-box;
     font-style: normal;
     color: white;
+    min-height: 500px;
+    background: url('../images/bg-pic-header.jpg') no-repeat center/cover;
+}
+
+.nav__menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logoInno {
+    margin: 45px 44px auto 89px;
+}
+
+.row1, .row2 {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    /* identical to box height */
+    color: #FFFFFF;
+    text-align: left;
+    padding: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.row1 {
+    margin-top: 45px;
+}
+
+.lang__sel {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    /* identical to box height */
+    color: #FFFFFF;
+    text-align: left;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    margin: 55px 100px auto auto;
+}
+
+.lang__sel p {
+    margin: 0 5px 0;
+}
+
+.lang__sel svg {
+    margin: auto;
+}
+
+.row1>* {
+    padding: 0;
+    margin: 0 50px 0 0;
+}
+
+.link__underline {
+    border-bottom: 1px solid;
+}
+
+.row1>:hover, .row2>:hover {
+    color: lawngreen;
+}
+
+.callback {
+    /* width: 130px;
+    height: 21px; */
+    font-family: inherit;
+    border-radius: 6px;
+    background: #FFF;
+    color: #333333;
+    border: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: left;
+    height: fit-content;
+}
+
+.callback svg {
+    margin: auto 3px;
+}
+
+.callback div {
+    padding: auto;
+    margin: auto 4px;
 }
 
 a {
     color: inherit;
     text-decoration: none;
+}
+
+header div h1 {
+    font-style: normal;
+    font-weight: 100;
+    font-size: 68px;
+    line-height: 88px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 131px auto 0;
+}
+
+header div h2 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 41px;
+    line-height: 53px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 14px auto 0;
+    padding-bottom: 200px;
+}
+section{
+    padding: 0;
+    margin: 0;
+}
+.block00 {
+    width: 426px;
+    height: 221px;
+    
+    background: #FFFFFF;
+    box-shadow: 0px 27px 39px rgba(163, 204, 64, 0.18);
+    border-radius: 10px;
+    display: block;
+    position: relative;
+    left: 50%;
+    top: -100px;
+    margin-bottom: -100px;
+    
+}
+
+.block00 h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 33px;
+    line-height: 43px;
+    /* identical to box height */
+    color: #333333;
+    padding: 30px 0 0;
+    margin:  0 auto;
+    text-align: center;
+    
+}
+
+.block00 p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 14px;
+    color: #333333;
+    text-align: center;
+}
+
+.block01{
+    padding: 0;
+    margin: 0 auto;
+}
+
+.block01__advant{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.block01__advant>div{
+    width: 245px;
+    height: 338px;
 }
 
 ol li {
@@ -123,13 +289,14 @@ table {
     margin: 0px auto 84px;
 }
 
-.block03__title h3 {
+h3 {
     font-style: normal;
     font-weight: 500;
     font-size: 48px;
     line-height: 62px;
     color: #A3CC40;
     margin: inherit;
+    
 }
 
 .block03__parag {
@@ -164,19 +331,21 @@ form button {
 }
 
 .movieSelect {
-    background-color: white;
+    /* background-color: white;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
     max-width: 284px;
     height: 284px;
+    background: white no-repeat center / cover;
 }
 
 .goodsSelect {
-    background-color: white;
+    /* background-color: white;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
     height: 331px;
     width: 245px;
+    background: white no-repeat center / cover;
 }
 
 .row1 {
@@ -202,31 +371,31 @@ form button {
 }
 
 #bgCinemaImg1 {
-    background-image: url('../images/bg-movie-1.png');
+    background: url('../images/bg-movie-1.png');
 }
 
 #bgCinemaImg2 {
-    background-image: url('../images/bg-movie-2.png');
+    background: url('../images/bg-movie-2.png');
 }
 
 #bgCinemaImg3 {
-    background-image: url('../images/bg-movie-3.png');
+    background: url('../images/bg-movie-3.png');
 }
 
 #bgCinemaImg4 {
-    background-image: url('../images/bg-movie-4.png');
+    background: url('../images/bg-movie-4.png');
 }
 
 #goodsPic1 {
-    background-image: url('../images/bg-goods-1.png');
+    background: url('../images/bg-goods-1.png');
 }
 
 #goodsPic2 {
-    background-image: url('../images/bg-goods-2.png');
+    background: url('../images/bg-goods-2.png');
 }
 
 #goodsPic3 {
-    background-image: url('../images/bg-goods-3.png');
+    background: url('../images/bg-goods-3.png');
 }
 
 #logoInno {
@@ -241,7 +410,7 @@ form button {
 #backPoster {
     height: 527px;
     width: 414px;
-    background-image: url('../images/bg-feedbacksection.png');
+    background: url('../images/bg-feedbacksection.png');
 }
 
 #imgMap {
