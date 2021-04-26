@@ -1,3 +1,5 @@
+/* Шрифты */
+
 /* ibm-plex-sans-100*/
 
 @font-face {
@@ -31,8 +33,12 @@
     src: local(''), url('../fonts/Ibmplexsansmedium.woff') format('woff'), url('../fonts/Ibmplexsansmedium.woff2') format('woff2')
 }
 
+/* Общие стили */
+
 html {
     font-family: IBM Plex Sans;
+    max-width: 1080px;
+    min-width: 550px;
 }
 
 body {
@@ -41,11 +47,9 @@ body {
 }
 
 header {
-    
     box-sizing: border-box;
     font-style: normal;
     color: white;
-    min-height: 500px;
     background: url('../images/bg-pic-header.jpg') no-repeat center/cover;
 }
 
@@ -53,14 +57,14 @@ header {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    
 }
-.nav__secondcol{
+
+.nav__secondcol {
     flex-grow: 4;
 }
 
 .logoInno {
-    margin: 45px 44px auto 89px;
+    margin: 45px 4% auto 8.25%;
 }
 
 .row1, .row2 {
@@ -71,8 +75,8 @@ header {
     color: #FFFFFF;
     text-align: left;
     padding: auto;
-       
 }
+
 .row1 {
     display: flex;
     justify-content: space-around;
@@ -82,12 +86,10 @@ header {
     display: flex;
     justify-content: space-around;
     margin-top: 14px;
-    
 }
 
 .row1 {
     margin-top: 45px;
-   
 }
 
 .lang__sel {
@@ -100,7 +102,7 @@ header {
     display: flex;
     align-items: flex-start;
     justify-content: space-evenly;
-    margin: 45px 100px auto auto;
+    margin: 45px 9.25% auto auto;
 }
 
 .lang__sel p {
@@ -114,8 +116,7 @@ header {
 .row1>p, .row1>button {
     padding: auto;
     margin: auto;
-    /* margin-right: 50px; */
-    white-space:nowrap;
+    white-space: nowrap;
 }
 
 .link__underline {
@@ -186,9 +187,20 @@ header div h2 {
     padding-bottom: 200px;
 }
 
-section {
-    padding: 0;
-    margin: 0;
+.nav__titles {
+    max-width: 100;
+}
+
+.nav__titles:after {
+    content: '';
+    display: block;
+    border-top: 100px solid transparent;
+    border-right: 97vw solid #fff;
+    /* border-left: 10px solid #000;
+    border-bottom: 10px solid #000; */
+    position: relative;
+    left: 0;
+    bottom: 0;
 }
 
 .block00 {
@@ -201,7 +213,7 @@ section {
     position: relative;
     left: 50%;
     top: -100px;
-    margin-bottom: -100px;
+    margin-bottom: -150px;
 }
 
 .block00 h3 {
@@ -212,7 +224,7 @@ section {
     /* identical to box height */
     color: #333333;
     padding: 30px 0 0;
-    margin: 0 auto;
+    margin: 0 auto 25px;
     text-align: center;
 }
 
@@ -222,12 +234,17 @@ section {
     font-size: 11px;
     line-height: 14px;
     color: #333333;
-    text-align: center;
+    text-align: justify;
+    margin: 0 47px 5px;
 }
 
-.block01 {
-    padding: 0;
-    margin: 0 auto;
+section h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 62px;
+    color: #A3CC40;
+    margin-left: 12.5%;
 }
 
 .block01__advant {
@@ -235,11 +252,34 @@ section {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 84px auto 0;
+}
+
+.block01__advant h4 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+    /* identical to box height */
+    text-align: center;
+    color: #333333;
+    margin: 35px auto 0;
+}
+
+.block01__advant p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 14px;
+    text-align: center;
+    color: #333333;
+    margin: 25px auto 0;
 }
 
 .block01__advant>div {
     width: 245px;
     height: 338px;
+    margin: 0 13px 25px;
 }
 
 ol li {
@@ -253,6 +293,10 @@ li p {
 
 form {
     color: white;
+}
+
+.block02 {
+    margin-top: 80px;
 }
 
 td, th {
@@ -271,7 +315,7 @@ table {
     overflow: hidden;
     border-radius: 10px;
     margin: 0px auto 30px;
-    width: 849px;
+    max-width: 849px;
     table-layout: fixed;
 }
 
@@ -309,19 +353,10 @@ table {
     width: 272px;
 } */
 
-.block03__title {
+/* .block03__title {
     width: 849px;
     margin: 0px auto 84px;
-}
-
-h3 {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 48px;
-    line-height: 62px;
-    color: #A3CC40;
-    margin: inherit;
-}
+} */
 
 .block03__parag {
     font-style: normal;
@@ -334,6 +369,91 @@ h3 {
     margin: 0px auto 30px;
     padding: 0px 10px 40px;
     vertical-align: top;
+}
+
+.block04 {
+    background: url("../images/bg_block02.jpg") no-repeat center/cover;
+}
+
+.block04::before {
+    content: '';
+    display: block;
+    /* border-top: 100px solid transparent;
+    border-right: 97vw solid #fff; */
+    border-left: 97vw solid #fff;
+    border-bottom: 100px solid transparent;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+.block04::after {
+    content: '';
+    display: block;
+    border-top: 100px solid transparent;
+    border-right: 97vw solid #fff;
+    /* border-left: 97vw solid #fff;
+    border-bottom: 100px solid transparent; */
+    position: relative;
+    left: 0;
+    bottom: 0;
+}
+
+.block04>div {
+    display: inline-block;
+}
+
+.block04__rightside {
+    margin: 30px auto auto 12.8%;
+    position: relative;
+    top: -250px;
+}
+
+.block04__rightside img {
+    width: 302px;
+    height: 303px;
+    border-radius: 50%;
+}
+
+.block04__leftside {
+    max-width: 548px;
+    margin-right: auto;
+    position: relative;
+    top: 100px;
+}
+
+.block04__leftside>* {
+    text-align: right;
+    float: right;
+}
+
+.block04__leftside h3 {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 62px;
+    color: white;
+    margin-bottom: 38px;
+}
+.block04__leftside p{
+    font-weight: 100;
+    font-size: 11px;
+    line-height: 14px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.block04__button {
+    background: #A3CC40;
+    border-radius: 6px;
+    width: 190px;
+    height: 31px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: white;
+    white-space: nowrap;
+    text-align: center;
+    margin-top: 26px;
 }
 
 form button {
@@ -371,8 +491,6 @@ form button {
     width: 245px;
     background: white no-repeat center / cover;
 }
-
-
 
 .visuallyhidden {
     border: 0;
