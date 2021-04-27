@@ -314,7 +314,7 @@ table {
     color: #FFFFFF;
     overflow: hidden;
     border-radius: 10px;
-    margin: 0px auto 30px;
+    margin: 84px auto 30px;
     max-width: 849px;
     table-layout: fixed;
 }
@@ -434,7 +434,8 @@ table {
     color: white;
     margin-bottom: 38px;
 }
-.block04__leftside p{
+
+.block04__leftside p {
     font-weight: 100;
     font-size: 11px;
     line-height: 14px;
@@ -454,6 +455,7 @@ table {
     white-space: nowrap;
     text-align: center;
     margin-top: 26px;
+    border-style: none;
 }
 
 form button {
@@ -470,6 +472,32 @@ form button {
     margin: 0 auto;
 }
 
+/* Блок с выбором в виде мозайкой фильмов  */
+
+.block05 {
+    margin-top: 45px;
+}
+
+.block05 p {
+    margin-top: 27px;
+    max-width: 548px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 14px;
+    color: #333333;
+    margin-left: 12.5%;
+}
+
+.block05__mosaic {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 64px auto 0;
+    align-items: center;
+}
+
 .cinemaImg {
     width: 245px;
 }
@@ -478,9 +506,138 @@ form button {
     /* background-color: white;
     background-repeat: no-repeat;
     background-size: cover; */
-    max-width: 284px;
-    height: 284px;
+    width: 283px;
+    height: 283px;
     background: white no-repeat center / cover;
+}
+
+.movieSelect::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background: rgba(144, 210, 61, 0.4); */
+    background: rgba(0, 0, 0, .5);
+    z-index: 2;
+}
+
+.movieSelect:hover::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(144, 210, 61, 0.4);
+    /* background: rgba(0, 0, 0, .5); */
+    z-index: 2;
+}
+
+.movieSelect:hover>* {
+    visibility: visible;
+}
+
+.inner {
+    position: relative;
+    z-index: 3;
+    color: #FFF;
+}
+
+li.movieSelect h4 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 29px;
+    line-height: 38px;
+    /* identical to box height */
+    color: #FFFFFF;
+    z-index: 4;
+    width: 239px;
+    text-align: left;
+    margin: 17px auto 0;
+    visibility: hidden;
+}
+
+li.movieSelect p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 14.2px;
+    /* identical to box height */
+    color: #FFFFFF;
+    margin: 13px auto auto;
+    width: 237px;
+    visibility: hidden;
+}
+
+/* Блок с выбором товаров  */
+
+.block06 {
+    margin-top: 79px;
+}
+
+.block06 p {
+    margin-top: 27px;
+    max-width: 548px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 14px;
+    color: #333333;
+    margin-left: 12.5%;
+}
+
+.block06__list {
+    margin: 57px auto 0;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    margin: 57px 12.5% 0;
+    
+}
+
+ul.block06__list li {
+    height: 331px;
+    width: 245px;
+    overflow: hidden;
+    display: flex;
+    flex-flow: column;
+    border-radius: 6px;
+    justify-content: flex-end;
+    
+    
+}
+ul.block06__list li div{
+    height: 153px;
+    width: 100%;
+}
+li.goodsSelect::after {
+    content: '';
+    display: inline-block;
+    border-top: 10px solid #fff;
+    border-right: 10px solid #fff;
+    border-left: 10px solid #fff;
+    border-bottom: 10px solid #fff; 
+    position: relative;
+    left: 0;
+    bottom: 0;
+    
+}
+
+ul.block06__list li div h4 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+    /* identical to box height */
+    text-align: center;
+    color: #FFFFFF;
+    width: 177px;
+    margin: 0 auto;
+    vertical-align: bottom;
+    
+
 }
 
 .goodsSelect {
@@ -504,31 +661,31 @@ form button {
 }
 
 #bgCinemaImg1 {
-    background: url('../images/bg-movie-1.png');
+    background: url('../images/bg-movie-1.png') no-repeat center / cover;
 }
 
 #bgCinemaImg2 {
-    background: url('../images/bg-movie-2.png');
+    background: url('../images/bg-movie-2.png') no-repeat center / cover;
 }
 
 #bgCinemaImg3 {
-    background: url('../images/bg-movie-3.png');
+    background: url('../images/bg-movie-3.png') no-repeat center / cover;
 }
 
 #bgCinemaImg4 {
-    background: url('../images/bg-movie-4.png');
+    background: url('../images/bg-movie-4.png') no-repeat center / cover;
 }
 
 #goodsPic1 {
-    background: url('../images/bg-goods-1.png');
+    background: url('../images/bg-goods-1.png') no-repeat center / cover;
 }
 
 #goodsPic2 {
-    background: url('../images/bg-goods-2.png');
+    background: url('../images/bg-goods-2.png') no-repeat center / cover;
 }
 
 #goodsPic3 {
-    background: url('../images/bg-goods-3.png');
+    background: url('../images/bg-goods-3.png') no-repeat center / cover;
 }
 
 #logoInno {
@@ -543,7 +700,7 @@ form button {
 #backPoster {
     height: 527px;
     width: 414px;
-    background: url('../images/bg-feedbacksection.png');
+    background: url('../images/bg-feedbacksection.png') no-repeat center / cover;
 }
 
 #imgMap {
