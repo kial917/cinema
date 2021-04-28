@@ -35,7 +35,6 @@
 
 /* Общие стили */
 
-
 html {
     font-family: IBM Plex Sans;
     max-width: 1080px;
@@ -55,7 +54,7 @@ header {
     background: url('../images/bg-pic-header.jpg') no-repeat center/cover;
 }
 
-*,*::before,*::after{
+*, *::before, *::after {
     box-sizing: inherit;
 }
 
@@ -82,7 +81,7 @@ header {
     /* identical to box height */
     color: #FFFFFF;
     text-align: left;
-    padding: auto;
+    transition: all 0.3s cubic-bezier(0.4, 0, 1, 1);
 }
 
 .row1 {
@@ -96,6 +95,7 @@ header {
     justify-content: space-around;
     margin-top: 14px;
     flex-wrap: wrap-reverse;
+    text-transform: uppercase;
 }
 
 .row1 {
@@ -124,7 +124,6 @@ header {
 }
 
 .row1>p, .row1>button {
-    padding: auto;
     margin: auto;
     white-space: nowrap;
 }
@@ -135,15 +134,23 @@ header {
 
 .row1>:hover, .row2>:hover {
     color: #A3CC40;
+    transition: all 0.3s cubic-bezier(0.4, 0, 1, 1);
+}
+
+.row2>:hover {
+    text-decoration: underline;
+    transition: all 0.3s cubic-bezier(0.4, 0, 1, 1);
 }
 
 button.callback:hover path[fill="#333333"] {
     fill: white;
+    transition: all 0.3s cubic-bezier(0.4, 0, 1, 1);
 }
 
 button.callback:hover {
     background: #A3CC40;
     color: white;
+    transition: all 0.3s cubic-bezier(0.4, 0, 1, 1);
 }
 
 .callback {
@@ -160,15 +167,11 @@ button.callback:hover {
     line-height: 18px;
     text-align: left;
     height: fit-content;
+    margin: auto 4px;
 }
 
 .callback svg {
     margin: auto 3px;
-}
-
-.callback div {
-    padding: auto;
-    margin: auto 4px;
 }
 
 a {
@@ -195,10 +198,6 @@ header div h2 {
     color: #FFFFFF;
     margin: 14px auto 0;
     padding-bottom: 200px;
-}
-
-.nav__titles {
-    max-width: 100;
 }
 
 .nav__titles:after {
@@ -477,6 +476,7 @@ table {
     text-align: center;
     margin-top: 26px;
     border-style: none;
+    transition: all 0.3s cubic-bezier(0.4, 0, 1, 1)
 }
 
 form button {
@@ -491,6 +491,15 @@ form button {
     text-align: center;
     color: #FFFFFF;
     margin: 0 auto;
+}
+
+.block04__button:hover {
+    background: #FFFFFF;
+    border: 1px solid rgba(163, 204, 64, 0.62);
+    box-sizing: border-box;
+    box-shadow: 0px 2px 9px rgba(144, 210, 61, 0.3);
+    color: #A3CC40;
+    transition: all 0.3s cubic-bezier(0.4, 0, 1, 1)
 }
 
 /* Блок с выбором в виде мозайкой фильмов  */
@@ -542,6 +551,7 @@ form button {
     /* background: rgba(144, 210, 61, 0.4); */
     background: rgba(0, 0, 0, .5);
     z-index: 2;
+    transition: all 0.4s cubic-bezier(0.4, 0, 1, 1);
 }
 
 .movieSelect:hover::after {
@@ -554,10 +564,12 @@ form button {
     background: rgba(144, 210, 61, 0.4);
     /* background: rgba(0, 0, 0, .5); */
     z-index: 2;
+    transition: all 0.15s cubic-bezier(0.4, 0, 1, 1);
 }
 
 .movieSelect:hover>* {
     visibility: visible;
+    transition: all 0.3s cubic-bezier(0.4, 0, 1, 1);
 }
 
 .inner {
@@ -679,20 +691,19 @@ ul.block06__list li div h4 {
 
 /* Блок с отзывами */
 
-.block07{
+.block07 {
     margin-top: 38px;
     background: url('../images/bg-block07.jpg') no-repeat center / cover;
     position: relative;
     width: 100%;
     z-index: 0;
 }
-.block07>div{
+
+.block07>div {
     margin: 0 12.5% 0;
     padding: 126px 0 143px;
     position: relative;
 }
-
-
 
 /* Частные элементы */
 
@@ -739,7 +750,6 @@ ul.block06__list li div h4 {
     padding: 20px;
 }
 
-
 #backPoster {
     height: 527px;
     width: 414px;
@@ -758,6 +768,5 @@ ul.block06__list li div h4 {
 }
 
 /* После переноса svg вниз, перестал работать hover, я все вернул обратно, вновь начал работать */
-
 
 /** Медиа – правила */
