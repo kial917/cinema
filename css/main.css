@@ -734,6 +734,22 @@ ul.block06__list li div h4 {
     background: url('../images/bg-movie-4.png') no-repeat center / cover;
 }
 
+#bgCinemaImg5 {
+    background: url('../images/bg-movie-5.png') no-repeat center / cover;
+}
+#bgCinemaImg6 {
+    background: url('../images/bg-movie-6.png') no-repeat center / cover;
+}
+#bgCinemaImg7 {
+    background: url('../images/bg-movie-7.png') no-repeat center / cover;
+}
+#bgCinemaImg8 {
+    background: url('../images/bg-movie-8.png') no-repeat center / cover;
+}
+#bgCinemaImg9 {
+    background: url('../images/bg-movie-9.png') no-repeat center / cover;
+}
+
 #goodsPic1 {
     background: url('../images/bg-goods-1.png') no-repeat center / cover;
 }
