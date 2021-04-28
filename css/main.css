@@ -35,10 +35,12 @@
 
 /* Общие стили */
 
+
 html {
     font-family: IBM Plex Sans;
     max-width: 1080px;
     min-width: 550px;
+    box-sizing: border-box;
 }
 
 body {
@@ -52,6 +54,12 @@ header {
     color: white;
     background: url('../images/bg-pic-header.jpg') no-repeat center/cover;
 }
+
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+
+/* Header */
 
 .nav__menu {
     display: flex;
@@ -80,12 +88,14 @@ header {
 .row1 {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap-reverse;
 }
 
 .row2 {
     display: flex;
     justify-content: space-around;
     margin-top: 14px;
+    flex-wrap: wrap-reverse;
 }
 
 .row1 {
@@ -203,6 +213,8 @@ header div h2 {
     bottom: 0;
 }
 
+/* Блок Почему мы? Block00 Block01 */
+
 .block00 {
     width: 426px;
     height: 221px;
@@ -297,7 +309,9 @@ form {
     color: white;
 }
 
-.block02 {
+/* Блок с таблицей "Выберите фильм" */
+
+.block03 {
     margin-top: 80px;
 }
 
@@ -373,6 +387,8 @@ table {
     vertical-align: top;
 }
 
+/* Блок с подарком */
+
 .block04 {
     background: url("../images/bg_block02.jpg") no-repeat center/cover;
 }
@@ -408,20 +424,23 @@ table {
 .block04__rightside {
     margin: 30px auto auto 12.8%;
     position: relative;
-    top: -250px;
+    top: -300px;
 }
 
 .block04__rightside img {
-    width: 302px;
-    height: 303px;
+    max-width: 278px;
+    max-height: 278px;
     border-radius: 50%;
+    width: 25vw;
+    height: 25vw;
 }
 
 .block04__leftside {
     max-width: 548px;
     margin-right: auto;
     position: relative;
-    top: 100px;
+    width: 50.8%;
+    bottom: -10vw;
 }
 
 .block04__leftside>* {
@@ -658,6 +677,25 @@ ul.block06__list li div h4 {
     background: white no-repeat center / cover;
 }
 
+/* Блок с отзывами */
+
+.block07{
+    margin-top: 38px;
+    background: url('../images/bg-block07.jpg') no-repeat center / cover;
+    position: relative;
+    width: 100%;
+    z-index: 0;
+}
+.block07>div{
+    margin: 0 12.5% 0;
+    padding: 126px 0 143px;
+    position: relative;
+}
+
+
+
+/* Частные элементы */
+
 .visuallyhidden {
     border: 0;
     clip: rect(0 0 0 0);
@@ -701,10 +739,6 @@ ul.block06__list li div h4 {
     padding: 20px;
 }
 
-#imgPresent {
-    width: 302px;
-    height: 303px;
-}
 
 #backPoster {
     height: 527px;
@@ -724,3 +758,6 @@ ul.block06__list li div h4 {
 }
 
 /* После переноса svg вниз, перестал работать hover, я все вернул обратно, вновь начал работать */
+
+
+/** Медиа – правила */
