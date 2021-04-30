@@ -705,6 +705,109 @@ ul.block06__list li div h4 {
     position: relative;
 }
 
+.block07::before {
+    content: '';
+    display: block;
+    /* border-top: 100px solid transparent;
+    border-right: 97vw solid #fff; */
+    border-left: 97vw solid #fff;
+    border-bottom: 100px solid transparent;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+.block07::after {
+    content: '';
+    display: block;
+    border-top: 100px solid transparent;
+    border-right: 97vw solid #fff;
+    /* border-left: 97vw solid #fff;
+    border-bottom: 100px solid transparent; */
+    position: relative;
+    left: 0;
+    bottom: 0;
+}
+
+.block07 h3 {
+    margin-left: 0;
+}
+
+.block07 div p {
+    color: #FFF;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 1.26rem;
+    margin-top: 26px;
+    display: inline-block;
+    max-width: 548px;
+}
+
+.block07__list {
+    /* width: 246px;
+    height: 332px; */
+    width: 210px;
+    height: 284px;
+    background: #97B13C;
+    border-radius: 6px;
+    overflow: hidden;
+    color: #FFF;
+    margin-top: 10px;
+    transition: 0.1s;
+}
+
+.block07__list:hover{
+    transition: 0.3s;
+    transform: scale(1.17);
+}
+.block07__listcontainer {
+    margin-top: 99px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.block07__list img {
+    width: 100%;
+}
+
+.block07__list div {
+    margin: auto 16px auto;
+}
+
+.block07__list div h4 {
+    margin-top: 17px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 19px;
+    text-align: left;
+}
+
+.block07__list div p {
+    margin-top: 14px auto;
+    text-align: left;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 14px;
+    color: #FFF;
+    margin-top: 14px;
+}
+
+.block07__list div p:last-child {
+    margin-top: 14px auto;
+    text-align: right;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 9px;
+    line-height: 12px;
+}
+
 /* Частные элементы */
 
 .visuallyhidden {
@@ -737,15 +840,19 @@ ul.block06__list li div h4 {
 #bgCinemaImg5 {
     background: url('../images/bg-movie-5.png') no-repeat center / cover;
 }
+
 #bgCinemaImg6 {
     background: url('../images/bg-movie-6.png') no-repeat center / cover;
 }
+
 #bgCinemaImg7 {
     background: url('../images/bg-movie-7.png') no-repeat center / cover;
 }
+
 #bgCinemaImg8 {
     background: url('../images/bg-movie-8.png') no-repeat center / cover;
 }
+
 #bgCinemaImg9 {
     background: url('../images/bg-movie-9.png') no-repeat center / cover;
 }
