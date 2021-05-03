@@ -7,7 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
-    <title>Сайт кинотеатра</title>
+
+    <link rel="stylesheet" href="libs/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="libs/owl/owl.theme.default.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="libs/owl/owl.carousel.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // Выводим сообщение в консоль
+        console.log('Сообщение: местно время: 20-00')
+        </script>
+    <title>Сходи в кино уже</title>
 </head>
 
 
@@ -411,7 +422,7 @@
                 dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar etiam
                 non quam.
             </p>
-            <ul class="block06__list">
+            <ul class="block06__list" class="owl-carousel">
                 <li class="goodsSelect" id="goodsPic1">
                     <div>
                         <h4>Coca-cola</h4>
@@ -438,13 +449,14 @@
                     etiam
                     non quam.
                 </p>
-                <ul class="block07__listcontainer">
+                <ul class="block07__listcontainer owl-carousel" >
                     <li class="block07__list">
                         <img src="/images/pic-feedback-1.png" alt="Фотография Елены Еленовой" title="human">
                         <div>
                             <h4>Елена Еленова</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                 </p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut
+                            </p>
                             <p>13.12.2020</p>
                         </div>
                     </li>
@@ -452,8 +464,9 @@
                         <img src="/images/pic-feedback-2.png" alt="Фотография Бориса Борисова" title="human">
                         <div>
                             <h4>Борис Борисов</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                </p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut
+                            </p>
                             <p>13.12.2020</p>
                         </div>
                     </li>
@@ -461,15 +474,29 @@
                         <img src="/images/pic-feedback-3.png" alt="Фотография Лео ДиКаприо" title="human">
                         <div>
                             <h4>Леонардо ДиКаприо</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                 </p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut
+                            </p>
                             <p>13.12.2020</p>
                         </div>
+                        
+                    </li>
+                    <li class="block07__list">
+                        <img src="/images/pic-feedback-3.png" alt="Фотография Лео ДиКаприо" title="human">
+                        <div>
+                            <h4>Леонардо ДиКаприо</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut
+                            </p>
+                            <p>13.12.2020</p>
+                        </div>
+                        
                     </li>
                 </ul>
             </div>
 
         </section>
+        
         <section id="feedback-section">
 
             <form class="blank" id="backPoster" action="/order" method="POST">

@@ -769,6 +769,7 @@ ul.block06__list li div h4 {
     align-content: center;
     justify-content: space-around;
     align-items: center;
+    overflow:visible;
 }
 
 .block07__list img {
