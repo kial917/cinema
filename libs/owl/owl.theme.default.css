@@ -58,6 +58,7 @@
   background: #D6D6D6;
   display: block;
   -webkit-backface-visibility: visible;
+  backface-visibility: visible;
   transition: opacity 200ms ease;
   border-radius: 30px;
 }
@@ -67,18 +68,18 @@
 }
 
 .owl-theme .owl-nav span{
-  color: chartreuse;
+  color: #A3CC40;
   position: absolute;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 button.owl-prev span{
-  left: 244px;
-  top: 155px;
+  left: 31%;
+  top: 19%;
 }
 button.owl-next span{
-  left: 493px;
-  top: 155px;
+  left: 65.7%;
+  top: 19%;
 }
 
 div.owl-stage-outer{
