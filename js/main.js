@@ -7,5 +7,6 @@ $(document).ready(function(){
         margin: 0,
         // autoplay: true,
         autoplayHoverPause: true,
+        center: true,
     });
   });

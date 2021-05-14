@@ -699,7 +699,7 @@ ul.block06__list li div h4 {
     z-index: 0;
 }
 
-.block07>div {
+.block07__prev{
     margin: 0 12.5% 0;
     padding: 126px 0 143px;
     position: relative;
@@ -733,7 +733,7 @@ ul.block06__list li div h4 {
     margin-left: 0;
 }
 
-.block07 div p {
+.block07__prev p {
     color: #FFF;
     font-style: normal;
     font-weight: normal;
@@ -758,7 +758,7 @@ ul.block06__list li div h4 {
     text-align: right;
 }
 
-.block07__list:hover {
+.owl-item.active.center {
     transition: 0.3s;
     transform: scale(1.17);
 }
@@ -777,29 +777,27 @@ ul.block06__list li div h4 {
 .block07__list .block07__listimg {
     width: 210px;
     height: 153px;
-    
 }
 
-
-#block07__pic-feedback-1{
+#block07__pic-feedback-1 {
     background: url('..//images/pic-feedback-1.png') no-repeat center / cover;
 }
 
-#block07__pic-feedback-2{
+#block07__pic-feedback-2 {
     background: url('../images/pic-feedback-2.png') no-repeat center / cover;
 }
 
-#block07__pic-feedback-3{
+#block07__pic-feedback-3 {
     background: url('../images/pic-feedback-3.png') no-repeat center / cover;
 }
 
-#block07__pic-feedback-4{
+#block07__pic-feedback-4 {
     background: url('../images/pic-feedback-4.jpg') no-repeat center / cover;
 }
-#block07__pic-feedback-5{
+
+#block07__pic-feedback-5 {
     background: url('../images/pic-feedback-5.webp') no-repeat top center / cover;
 }
-
 
 .block07__list .block07__listtitle {
     margin: auto 16px auto;
@@ -832,6 +830,21 @@ ul.block06__list li div h4 {
     font-weight: 300;
     font-size: 9px;
     line-height: 12px;
+}
+
+/* Блок с обратной связью*/
+
+.block08__form {
+    background: #FFFFFF;
+    box-shadow: 8px 9px 39px rgba(185, 185, 185, 0.37);
+    border-radius: 20px;
+}
+
+/* Блок с картой*/
+
+.block09 {
+    margin: 61px 12.5% 0;
+    background: black;
 }
 
 /* Частные элементы */

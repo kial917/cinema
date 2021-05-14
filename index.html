@@ -422,7 +422,7 @@
                 dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar etiam
                 non quam.
             </p>
-            <ul class="block06__list" class="owl-carousel">
+            <ul class="block06__list" >
                 <li class="goodsSelect" id="goodsPic1">
                     <div>
                         <h4>Coca-cola</h4>
@@ -441,7 +441,7 @@
             </ul>
         </section>
         <section class="block07">
-            <div>
+            <div class="block07__prev">
                 <h3>Отзывы</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et
@@ -449,8 +449,8 @@
                     etiam
                     non quam.
                 </p>
-                <ul class="block07__listcontainer owl-carousel owl-theme" >
-                    <li class="block07__list">
+                <div class="block07__listcontainer owl-carousel owl-theme" >
+                    <div class="block07__list">
                         <div class="block07__listimg" id="block07__pic-feedback-1"></div>
                         <!-- <img src="/images/pic-feedback-1.png" alt="Фотография Елены Еленовой" title="human"> -->
                         <div class="block07__listtitle">
@@ -460,8 +460,8 @@
                             </p>
                             <p>13.12.2020</p>
                         </div>
-                    </li>
-                    <li class="block07__list">
+                    </div>
+                    <div class="block07__list">
                         <div class="block07__listimg" id="block07__pic-feedback-2"></div>
                         <!-- <img src="/images/pic-feedback-2.png" alt="Фотография Бориса Борисова" title="human"> -->
                         <div class="block07__listtitle">
@@ -471,8 +471,8 @@
                             </p>
                             <p>13.01.2021</p>
                         </div>
-                    </li>
-                    <li class="block07__list">
+                    </div>
+                    <div class="block07__list">
                         <div class="block07__listimg" id="block07__pic-feedback-3"></div>
                         <!-- <img src="/images/pic-feedback-3.png" alt="Фотография Лео ДиКаприо" title="human"> -->
                         <div class="block07__listtitle">
@@ -483,8 +483,8 @@
                             <p>13.02.2021</p>
                         </div>
                         
-                    </li>
-                    <li class="block07__list">
+                    </div>
+                    <div class="block07__list">
                         <div class="block07__listimg" id="block07__pic-feedback-4"></div>
                         <!-- <img src="/images/pic-feedback-4.jpg" alt="Антон Долин" title="human"> -->
                         <div class="block07__listtitle">
@@ -495,8 +495,8 @@
                             <p>13.03.2021</p>
                         </div>
                         
-                    </li>
-                    <li class="block07__list">
+                    </div>
+                    <div class="block07__list">
                         <div class="block07__listimg" id="block07__pic-feedback-5"></div>
                         <!-- <img src="/images/pic-feedback-5.webp" alt="Джеки Чан" title="human"> -->
                         <div class="block07__listtitle">
@@ -507,15 +507,15 @@
                             <p>13.04.2021</p>
                         </div>
                         
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
-
+                
         </section>
         
-        <section id="feedback-section">
+        <section id="feedback-section" class="block08">
 
-            <form class="blank" id="backPoster" action="/order" method="POST">
+            <form class="blank block08__form" id="backPoster" action="/order" method="POST">
                 <h3>Обратная связь</h3>
                 <input type="hidden" name="source" value="cinemasite">
                 <div>
@@ -549,7 +549,7 @@
             </form>
         </section>
 
-        <section>
+        <section class="block09">
             <img id="imgMap" src="./images/pic-map.png" alt="карта" title="Местоположение университета">
         </section>
     </main>
