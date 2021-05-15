@@ -11,13 +11,14 @@
     <link rel="stylesheet" href="libs/owl/owl.carousel.min.css">
     <link rel="stylesheet" href="libs/owl/owl.theme.default.css">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="libs/owl/owl.carousel.min.js"></script>
-    <script src="js/main.js"></script>
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script defer src="libs/owl/owl.carousel.min.js"></script>
+    <script defer src="js/films-table.js"></script>
+    <script defer src="js/main.js"></script>
     <script>
         // Выводим сообщение в консоль
         console.log('Сообщение: местно время: 20-00')
-        </script>
+    </script>
     <title>Сходи в кино уже</title>
 </head>
 
@@ -240,7 +241,7 @@
                             <th>Жанр</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody id="block03__table__body">
                         <tr>
                             <td class="block03__table__firstcol">
 
@@ -422,7 +423,7 @@
                 dolore magna aliqua. Nibh mauris cursus mattis molestie a iaculis at. Vel quam elementum pulvinar etiam
                 non quam.
             </p>
-            <ul class="block06__list" >
+            <ul class="block06__list">
                 <li class="goodsSelect" id="goodsPic1">
                     <div>
                         <h4>Coca-cola</h4>
@@ -449,7 +450,7 @@
                     etiam
                     non quam.
                 </p>
-                <div class="block07__listcontainer owl-carousel owl-theme" >
+                <div class="block07__listcontainer owl-carousel owl-theme">
                     <div class="block07__list">
                         <div class="block07__listimg" id="block07__pic-feedback-1"></div>
                         <!-- <img src="/images/pic-feedback-1.png" alt="Фотография Елены Еленовой" title="human"> -->
@@ -482,7 +483,7 @@
                             </p>
                             <p>13.02.2021</p>
                         </div>
-                        
+
                     </div>
                     <div class="block07__list">
                         <div class="block07__listimg" id="block07__pic-feedback-4"></div>
@@ -494,7 +495,7 @@
                             </p>
                             <p>13.03.2021</p>
                         </div>
-                        
+
                     </div>
                     <div class="block07__list">
                         <div class="block07__listimg" id="block07__pic-feedback-5"></div>
@@ -506,13 +507,13 @@
                             </p>
                             <p>13.04.2021</p>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
-                
+
         </section>
-        
+
         <section id="feedback-section" class="block08">
 
             <form class="blank block08__form" id="backPoster" action="/order" method="POST">
