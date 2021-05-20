@@ -924,7 +924,7 @@ ul.block06__list li div h4 {
     border-radius: 20px;
 }
 
-.block03__table__firstcol:hover path[fill="white"] {
+.block03__table__firstcol:hover svg {
     fill: #A3CC40;
     transition: all .8s ease;
 }
