@@ -1,0 +1,27 @@
+.popup{
+    position: fixed;
+    bottom: 0;
+    top:0;
+    left: 0;
+    right: 0;
+    background: rgba(51, 51, 51, 0.24);
+}
+.form-wrapper{
+    background: #fff;
+    margin: 50vh auto;
+    max-width: 500px;
+    min-height: 250px;
+    border-radius: 40px;
+    position: relative;
+
+}
+
+.close{
+    position: absolute;
+    top: 22px;
+    right: 22px;
+}
+
+.hidden{
+    display: none;
+}

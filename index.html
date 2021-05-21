@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/modal.css">
 
     <link rel="stylesheet" href="libs/owl/owl.carousel.min.css">
     <link rel="stylesheet" href="libs/owl/owl.theme.default.css">
@@ -15,10 +16,8 @@
     <script defer src="libs/owl/owl.carousel.min.js"></script>
     <script defer src="js/films-table.js"></script>
     <script defer src="js/main.js"></script>
-    <script>
-        // Выводим сообщение в консоль
-        console.log('Сообщение: местно время: 20-00')
-    </script>
+    <script defer src="js/gift.js"></script>
+    
     <title>Сходи в кино уже</title>
 </head>
 
@@ -338,7 +337,7 @@
                     sed
                     officiis sint?lam.voluptates aut eos rerum alias itaque labore, assumend
                 </p>
-                <button class="block04__button">Получить подарок</button>
+                <button class="block04__button" id="btn-gift-open">Получить подарок</button>
             </div>
 
         </section>
@@ -585,6 +584,18 @@
         </div>
     </footer>
 
+    <div class="hidden popup" id="gift-popup">
+        <div class="form-wrapper">
+            <div class="close">
+                <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="17.5" cy="17.5" r="17.5" fill="#A3CC40"/>
+                    <path d="M25.5363 11.8271L23.9176 10.2084L17.5 16.626L11.0824 10.2084L9.46362 11.8271L15.8812 18.2447L9.46362 24.6623L11.0824 26.2811L17.5 19.8635L23.9176 26.2811L25.5363 24.6623L19.1187 18.2447L25.5363 11.8271Z" fill="white"/>
+                    </svg>
+                    
+                    
+            </div>
+        </div>
+    </div>
 
 </body>
 
