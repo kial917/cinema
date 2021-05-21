@@ -5,6 +5,7 @@
     left: 0;
     right: 0;
     background: rgba(51, 51, 51, 0.24);
+    z-index: 9;
 }
 .form-wrapper{
     background: #fff;
@@ -20,6 +21,8 @@
     position: absolute;
     top: 22px;
     right: 22px;
+    border: none;
+    background: inherit;
 }
 
 .hidden{
