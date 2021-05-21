@@ -1,8 +1,8 @@
 const openBtn = document.getElementById('btn-gift-open');
 const popup = document.getElementById('gift-popup');
-const closeBtn =document.getElementById('gift-popup-close');
+const closeBtn = document.getElementById('gift-popup-close');
 
-function popupToggle(){
+function popupToggle() {
     popup.classList.toggle('hidden');
 };
 
