@@ -699,7 +699,7 @@ ul.block06__list li div h4 {
     z-index: 0;
 }
 
-.block07__prev{
+.block07__prev {
     margin: 0 12.5% 0;
     padding: 126px 0 143px;
     position: relative;
@@ -834,10 +834,35 @@ ul.block06__list li div h4 {
 
 /* Блок с обратной связью*/
 
+.block08__container {
+    flex-basis: 767px;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    justify-content: center;
+    align-items: stretch;
+    padding-top: 43px;
+    padding-bottom: 61px;
+    
+    
+}
+
+.block08__img {
+    box-shadow: 8px 9px 39px rgba(185, 185, 185, 0.137);
+    border-radius: 20px 0px 0px 20px;
+    overflow: hidden;
+    flex-shrink: 20;
+}
+
 .block08__form {
     background: #FFFFFF;
-    box-shadow: 8px 9px 39px rgba(185, 185, 185, 0.37);
-    border-radius: 20px;
+    box-shadow: 8px 9px 39px rgba(185, 185, 185, 0.137);
+    border-radius: 0px 20px 20px 0px;
+    overflow: hidden;
+    
+    
 }
 
 /* Блок с картой*/
@@ -914,7 +939,7 @@ ul.block06__list li div h4 {
 
 #backPoster {
     height: 527px;
-    width: 414px;
+    width: 387px;
     background: url('../images/bg-feedbacksection.png') no-repeat center / cover;
 }
 
@@ -928,7 +953,6 @@ ul.block06__list li div h4 {
     fill: #A3CC40;
     transition: all .8s ease;
 }
-
 
 /* После переноса svg вниз, перестал работать hover, я все вернул обратно, вновь начал работать */
 

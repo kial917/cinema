@@ -514,39 +514,40 @@
         </section>
 
         <section id="feedback-section" class="block08">
-
-            <form class="blank block08__form" id="backPoster" action="/order" method="POST">
-                <h3>Обратная связь</h3>
-                <input type="hidden" name="source" value="cinemasite">
-                <div>
-                    <label for="username" class="visuallyhidden">Полное имя</label>
-                    <input type="text" id="username" name="username" value="" placeholder="Полное имя" required>
-                </div>
-                <div>
-                    <label for="seatnumber" class="visuallyhidden">Номер места</label>
-                    <select name="seatnumber" id="seatnumber" size="1">
-                        <option selected>Выберите место</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                    </select>
-                </div>
-                <div>
-                    <label for="feedback-area" class="visuallyhidden">Поле для текста отзыва</label>
-                    <textarea id="feedback-area" name="feedback-area" rows="10" cols="15"
-                        placeholder="Напишите свой отзыв" required></textarea></div>
-                <div>
-                    <input id="agreement" type="checkbox" required>
-                    <label for="agreement">Я согласен на обработку своих персональных данных</label>
-                </div>
-
-                <button type="submit">
-                    послать
-                </button>
-            </form>
+            <div class="block08__container">
+                <div class="block08__img" id="backPoster"></div>
+                <form class="blank block08__form" action="/order" method="POST">
+                    <h3>Обратная связь</h3>
+                    <input type="hidden" name="source" value="cinemasite">
+                    <div>
+                        <label for="username" class="visuallyhidden">Полное имя</label>
+                        <input type="text" id="username" name="username" value="" placeholder="Полное имя" required>
+                    </div>
+                    <div>
+                        <label for="seatnumber" class="visuallyhidden">Номер места</label>
+                        <select name="seatnumber" id="seatnumber" size="1">
+                            <option selected>Выберите место</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="feedback-area" class="visuallyhidden">Поле для текста отзыва</label>
+                        <textarea id="feedback-area" name="feedback-area" rows="10" cols="15"
+                            placeholder="Напишите свой отзыв" required></textarea></div>
+                    <div>
+                        <input id="agreement" type="checkbox" required>
+                        <label for="agreement">Я согласен на обработку своих персональных данных</label>
+                    </div>
+                    <button type="submit">
+                        послать
+                    </button>
+                </form>
+            </div>
         </section>
 
         <section class="block09">

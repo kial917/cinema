@@ -71,21 +71,25 @@ const films = [{
 }, ];
 
 const filmHelper = {
-    getId (){
-        return this.id || this.title.replaceALL(' ','-')
+    getId() {
+        return this.id;
     },
-    getTitle (){
+    getTitle() {
         return this.title;
     },
-    getStart(){
+    getStart() {
         return this.start;
     },
-    getGenre(){
-        return this.genre.map(g=>g.name).join(', ');
+    getGenre() {
+        return this.genre.map(g => g.name).join(', ');
     },
-    getLink(){
+    getLink() {
         return this.link;
     },
+    getCheck() {
+        return !this.adult ? true : false;
+    },
+
 };
 
 function renderFilmTableItem(film) {
@@ -113,8 +117,8 @@ function renderFilmTableItem(film) {
 const tableBody = document.getElementById('block03__table__body');
 tableBody.innerHTML = ``;
 
-films.forEach(film=>{
-    if (!film.adult) {
+films.forEach(film => {
+    if (filmHelper.getCheck.apply(film)) {
         tableBody.innerHTML += renderFilmTableItem(film);
     }
 })
