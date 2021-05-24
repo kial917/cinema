@@ -836,7 +836,6 @@ ul.block06__list li div h4 {
 
 .block08__container {
     flex-basis: 767px;
-    
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -845,8 +844,6 @@ ul.block06__list li div h4 {
     align-items: stretch;
     padding-top: 43px;
     padding-bottom: 61px;
-    
-    
 }
 
 .block08__img {
@@ -854,22 +851,151 @@ ul.block06__list li div h4 {
     border-radius: 20px 0px 0px 20px;
     overflow: hidden;
     flex-shrink: 20;
+    position: relative;
+}
+
+.block08__formcontainer {
+    box-shadow: 8px 9px 39px rgba(185, 185, 185, 0.137);
+    border-radius: 0px 20px 20px 0px;
+    overflow: hidden;
+    position: relative;
+    flex-basis: 406px;
+    flex-shrink: 1;
+}
+
+.block08__img::after {
+    content: "";
+    display: block;
+    width: 70%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: transparent;
+    background-image: linear-gradient(to right, #fdfdfd00, #ffffff);
 }
 
 .block08__form {
     background: #FFFFFF;
-    box-shadow: 8px 9px 39px rgba(185, 185, 185, 0.137);
-    border-radius: 0px 20px 20px 0px;
-    overflow: hidden;
+}
+
+.block08__form h4 {
+    font-family: IBM Plex Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 32px;
+    color: #A3CC40;
+    width: 344px;
+    margin: 31px auto 0;
+    text-align: center;
+}
+
+input#username {
+    margin: 20px auto 0 20px;
+    width: 344px;
+    background: #DEDEDE;
+    border: none;
+    height: 40px;
+    color: #A1A1A1;
+    font-size: 15px;
+    line-height: 1.26em;
+    padding-left: 16px;
+    padding-top: 10px;
+    border-radius: 5px;
+}
+
+input#username::-webkit-input-placeholder {
+    color: #A1A1A1;
+}
+
+input#username::-moz-placeholder {
+    color: #A1A1A1;
+}
+
+select#seatnumber {
+    margin: 31px auto 0 20px;
+    width: 344px;
+    background: #DEDEDE;
+    border: none;
+    height: 40px;
+    color: #A1A1A1;
+    font-size: 15px;
+    line-height: 19px;
+    padding-left: 16px;
+    padding-top: 8px;
+    border-radius: 5px;
+    padding-right: 15px;
+}
+
+textarea#feedback-area {
+    margin: 30px auto 0 20px;
+    width: 344px;
+    height: 130px;
+    background: #DEDEDE;
+    border: none;
+    color: #A1A1A1;
+    font-size: 15px;
+    line-height: 19px;
+    padding-left: 16px;
+    padding-top: 13px;
+    border-radius: 5px;
+    padding-right: 15px;
+}
+
+textarea#feedback-area::-webkit-input-placeholder {
+    color: #A1A1A1;
+}
+
+textarea#feedback-area::-moz-placeholder {
+    color: #A1A1A1;
+}
+
+input#agreement+label {
+    font-family: IBM Plex Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 13px;
+    /* identical to box height */
+    color: #333333;
+    position: relative;
+    padding-left: 30px;
+}
+
+input#agreement+label::before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 17px;
+    margin-right: 0.54rem;
+    border: 1px solid #A3CC40;
+    border-radius: 5px;
+    left: -1px;
+}
+
+input[type="checkbox"]#agreement:checked+label::before {
+    background: url("../images/check-mark.svg") no-repeat center;
     
-    
+   
+}
+
+.block08__argeementform {
+    margin-top: 29px;
+    margin-left: 20px;
+}
+
+.block08__argeementbtn {
+    margin-top: 42px;
+    margin-left: 20px;
+    border: none;
 }
 
 /* Блок с картой*/
 
 .block09 {
-    margin: 61px 12.5% 0;
-    background: black;
+    margin: 61px auto 0;
+    max-width: 973px;
 }
 
 /* Частные элементы */
