@@ -37,7 +37,7 @@
 
 html {
     font-family: IBM Plex Sans;
-    max-width: 1080px;
+    max-width: 1126px;
     min-width: 550px;
     box-sizing: border-box;
 }
@@ -976,8 +976,6 @@ input#agreement+label::before {
 
 input[type="checkbox"]#agreement:checked+label::before {
     background: url("../images/check-mark.svg") no-repeat center;
-    
-   
 }
 
 .block08__argeementform {
@@ -996,6 +994,68 @@ input[type="checkbox"]#agreement:checked+label::before {
 .block09 {
     margin: 61px auto 0;
     max-width: 973px;
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    height: 362px;
+    background: #A3CC40;
+    margin-top: -20px;
+    z-index: 9;
+    color: white;
+}
+
+.footer__container {
+    padding-top: 89px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-content: space-around;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer__firstcol {
+    flex-basis: 39.07%;
+    height: 244px;
+    flex-shrink: 3;
+    padding-left: 7.9%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer__firstcolp {
+    max-width: 269px;
+    font-family: IBM Plex Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.footer__firstcolrights {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 19px;
+}
+
+.footer__secondcol {
+    flex-basis: 18.65%;
+    height: 244px;
+    flex-shrink: 1;
+}
+
+.footer__thirdcol {
+    flex-basis: 34.28%;
+    height: 244px;
+    flex-shrink: 5;
 }
 
 /* Частные элементы */
@@ -1072,6 +1132,7 @@ input[type="checkbox"]#agreement:checked+label::before {
 #imgMap {
     max-height: 421px;
     max-width: 973px;
+    min-width: 320xpx;
     border-radius: 20px;
 }
 
