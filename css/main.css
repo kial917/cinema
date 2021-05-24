@@ -1015,13 +1015,34 @@ footer {
     align-content: space-around;
     justify-content: space-between;
     align-items: flex-start;
+    position: relative;
 }
 
+.footer__container::before {
+    content: ' ';
+    width: 89px;
+    height: 106px;
+    position: absolute;
+    left: 0px;
+    top: 123px;
+    background: rgba(196, 196, 196, 1);
+}
+.footer__container::after {
+    content: ' ';
+    width: 89px;
+    height: 106px;
+    position: absolute;
+    right: 0px;
+    top: 123px;
+    background: rgba(196, 196, 196, 1);
+}
+
+
 .footer__firstcol {
-    flex-basis: 39.07%;
+    flex-basis: 43%;
     height: 244px;
     flex-shrink: 3;
-    padding-left: 7.9%;
+    padding-left: 89px;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -1046,16 +1067,74 @@ footer {
     line-height: 19px;
 }
 
+.footer__secondcol h4 {
+    text-transform: uppercase;
+    font-family: IBM Plex Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 26px;
+}
+
 .footer__secondcol {
     flex-basis: 18.65%;
     height: 244px;
     flex-shrink: 1;
+    text-transform: uppercase;
+    font-family: IBM Plex Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.footer__secondcol p:first-child {
+    padding-top: 22px;
+}
+
+.footer__secondcol p {
+    padding-top: 12px;
 }
 
 .footer__thirdcol {
-    flex-basis: 34.28%;
+    flex-basis: 140px;
+    padding-right: 254px;
     height: 244px;
     flex-shrink: 5;
+    font-family: IBM Plex Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.footer__thirdcol h4 {
+    text-transform: uppercase;
+    font-family: IBM Plex Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.footer__thirdcol p:first-child {
+    padding-top: 22px;
+}
+
+.footer__thirdcol p {
+    padding-top: 12px;
 }
 
 /* Частные элементы */
