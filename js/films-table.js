@@ -1,4 +1,4 @@
-const films = [{
+const filmsData = [{
     id: 26,
     link: 838,
     start: '10:00',
@@ -70,55 +70,12 @@ const films = [{
     ]
 }, ];
 
-const filmHelper = {
-    getId() {
-        return this.id;
-    },
-    getTitle() {
-        return this.title;
-    },
-    getStart() {
-        return this.start;
-    },
-    getGenre() {
-        return this.genre.map(g => g.name).join(', ');
-    },
-    getLink() {
-        return this.link;
-    },
-    getCheck() {
-        return !this.adult ? true : false;
-    },
-
-};
-
-function renderFilmTableItem(film) {
-    return `
-        <tr>
-            <td class="block03__table__firstcol">
-                <input type="checkbox" id="${filmHelper.getId.apply(film)}" class="visuallyhidden">
-
-                <label for="${filmHelper.getId.apply(film)}">
-                    <svg width="11" height="9" viewBox="0 0 11 9" fill="white"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path class="checkMark__path" fill-rule="evenodd" clip-rule="evenodd"
-                            d="M4.60581 6.79378L1.46056 3.93033L0.787354 4.66979L4.70255 8.23421L10.8223 0.94099L10.0562 0.298203L4.60581 6.79378Z"
-                            />
-                    </svg>
-                </label>
-            </td>
-            <td>${filmHelper.getStart.apply(film)}</td>
-            <td><a href="https://www.kinopoisk.ru/film/${filmHelper.getLink.apply(film)}" target="_blank">${filmHelper.getTitle.apply(film)}</a> </td>
-            <td>${filmHelper.getGenre.apply(film)}</td>
-        </tr>
-    `
-}
-
 const tableBody = document.getElementById('block03__table__body');
 tableBody.innerHTML = ``;
 
-films.forEach(film => {
-    if (filmHelper.getCheck.apply(film)) {
-        tableBody.innerHTML += renderFilmTableItem(film);
+filmsData.forEach(elem => {
+    const film = new Film(elem);
+    if (film.isNotForAdult()) {
+        tableBody.innerHTML += film.renderFilmTableItem();
     }
-})
+});
