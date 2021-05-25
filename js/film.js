@@ -1,5 +1,6 @@
 function Film(filmData) {
     this.data = filmData;
+    this.start = `${toHour(GetRandomToMax(14)+9)}:${toMinutes(GetRandomToMax(6))}`
 };
 Film.prototype.isNotForAdult = function () {
     return !this.data.adult;
@@ -7,16 +8,16 @@ Film.prototype.isNotForAdult = function () {
 Film.prototype.getId = function () {
     return this.data.id;
 };
-Film.prototype.getStart= function () {
-    return this.data.start;
+Film.prototype.getStart = function () {
+    return this.start;
 };
-Film.prototype.getLink= function () {
+Film.prototype.getLink = function () {
     return this.data.link;
 };
-Film.prototype.getTitle= function () {
+Film.prototype.getTitle = function () {
     return this.data.title;
 };
-Film.prototype.getGenre= function () {
+Film.prototype.getGenre = function () {
     return this.data.genre.map(g => g.name).join(', ');
 };
 Film.prototype.renderFilmTableItem = function () {

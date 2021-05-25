@@ -1,7 +1,7 @@
 const filmsData = [{
     id: 26,
     link: 838,
-    start: '10:00',
+    
     title: 'Человек-паук',
     genre: [{
             name: 'фантастика',
@@ -16,7 +16,7 @@ const filmsData = [{
 }, {
     id: 27,
     link: 1122114,
-    start: '12:00',
+    
     title: 'Собачья жизнь 2',
     genre: [{
             name: 'фэнтэзи',
@@ -31,7 +31,7 @@ const filmsData = [{
 }, {
     id: 28,
     link: 846824,
-    start: '14:00',
+    
     title: 'История игрушек 4',
     genre: [{
             name: 'Мультфильм',
@@ -46,7 +46,7 @@ const filmsData = [{
 }, {
     id: 29,
     link: 693730,
-    start: '16:00',
+    
     title: 'Люди в чёрном: Интэрнэшнл',
     genre: [{
             name: 'фанстастика',
@@ -60,7 +60,7 @@ const filmsData = [{
     ]
 }, {
     id: 30,
-    start: '01:00',
+    
     title: 'Кожаные барсетки 5',
     adult: true,
     genre: [{
