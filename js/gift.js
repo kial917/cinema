@@ -6,5 +6,7 @@ function popupToggle() {
     popup.classList.toggle('hidden');
 };
 
+function initializeField()
+
 openBtn.onclick = popupToggle;
 closeBtn.onclick = popupToggle;

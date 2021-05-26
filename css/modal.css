@@ -10,10 +10,11 @@
 .form-wrapper{
     background: #fff;
     margin: 50vh auto;
-    max-width: 500px;
-    min-height: 250px;
+    max-width: 600px;
+    min-height: 500px;
     border-radius: 40px;
     position: relative;
+    top:-200px;
 
 }
 
@@ -32,4 +33,98 @@
 }
 .hidden{
     display: none;
+}
+
+/* Стилизация input полей */
+
+.modal__inputwrapper{
+    padding-top: 90px;
+    padding-left: 20px;
+}
+
+input#usernamegift, input#emailgift {
+    margin: 20px auto 0 20px;
+    width: 500px;
+    background: #DEDEDE;
+    border: none;
+    height: 40px;
+    color: #A1A1A1;
+    font-size: 15px;
+    line-height: 1.26em;
+    padding-left: 16px;
+    padding-top: 10px;
+    border-radius: 5px;
+}
+
+input#usernamegift::-webkit-input-placeholder, input#emailgift::-webkit-input-placeholder{
+    color: #A1A1A1;
+}
+
+input#usernamegift::-moz-placeholder,  input#emailgift::-moz-placeholder{
+    color: #A1A1A1;
+}
+
+select#selectgift {
+    margin: 31px auto 0 20px;
+    width: 500px;
+    background: #DEDEDE;
+    border: none;
+    height: 40px;
+    color: #A1A1A1;
+    font-size: 15px;
+    line-height: 19px;
+    padding-left: 16px;
+    padding-top: 8px;
+    border-radius: 5px;
+    padding-right: 15px;
+}
+
+
+input#agreementforgift+label {
+    font-family: IBM Plex Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 13px;
+    /* identical to box height */
+    color: #333333;
+    position: relative;
+    padding-left: 30px;
+}
+
+input#agreementforgift+label::before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 17px;
+    margin-right: 0.54rem;
+    border: 1px solid #A3CC40;
+    border-radius: 5px;
+    left: -1px;
+}
+
+input[type="checkbox"]#agreementforgift:checked+label::before {
+    background: url("../images/check-mark.svg") no-repeat center;
+}
+
+.modal__argeementform {
+    margin-top: 29px;
+    margin-left: 20px;
+}
+
+.modal__argeementbtn {
+    margin-top: 42px;
+    margin-left: 20px;
+    border: none;
+    width: 500px;
+        background: #A3CC40;
+    border-radius: 6px;
+    font-size: 20px;
+    line-height: 2.5rem;
+    font-style: normal;
+    font-weight: 500;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    
 }

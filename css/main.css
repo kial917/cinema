@@ -1087,8 +1087,18 @@ footer {
     left: 0px;
     top: -7.5px;
     background: rgba(190, 233, 86, 1);
-    display: block;
     z-index: -1;
+    transition: all 0.3s cubic-bezier(0.4, 0, 1, 1);
+}
+
+.footer__icons div:hover::after {
+    box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+    background: rgb(243, 241, 241);
+    transition: all 0.2s cubic-bezier(0.4, 0, 1, 1);
+}
+.footer__icons div:hover path[fill="white"] {
+    fill:rgba(163, 204, 64, 0.8);
+    transition: all 0.4s cubic-bezier(0.4, 0, 1, 1);
 }
 
 .footer__firstcolrights {
