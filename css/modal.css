@@ -22,9 +22,14 @@
     top: 22px;
     right: 22px;
     border: none;
-    background: inherit;
+    width: 35px;
+    height: 35px;
+    background: transparent;
+    background-image: url(/images/btn-close.svg);
 }
-
+.close:hover{
+    background-image: url(/images/btn-close-hover.svg);
+}
 .hidden{
     display: none;
 }
