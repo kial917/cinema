@@ -3,7 +3,7 @@ function GetRandomToMax(max) {
     return Math.ceil(Math.random() * (max + 1)) - 1;
 };
 
-function toHour(num) {
+function toHours(num) {
     return `${num}`.padStart(2, '0')
 }
 function toMinutes(num) {

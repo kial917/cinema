@@ -16,8 +16,8 @@ const FOCUSED_CLASS_NAME = "st-usernamegift-focused";
 function initializeField(field) {
     const input = field.getElementsByTagName('input')[0];
     const fieldError = field.querySelector('.st-usernamegift-error-msg');
-
-    input.value = '';
+   
+    input.value = '1';
     field.classList.remove(ERROR_CLASS_NAME);
     field.classList.remove(FOCUSED_CLASS_NAME);
     fieldError.innerText = '';

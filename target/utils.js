@@ -6,7 +6,7 @@ function GetRandomToMax(max) {
 
 ;
 
-function toHour(num) {
+function toHours(num) {
   return "".concat(num).padStart(2, '0');
 }
 
