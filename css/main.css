@@ -37,14 +37,10 @@
 
 html {
     font-family: IBM Plex Sans;
-    max-width: 1126px;
+    max-width: 1124px;
     min-width: 550px;
     box-sizing: border-box;
-}
-
-body {
-    max-width: 1080px;
-    min-width: 550px;
+    z-index: 1;
 }
 
 header {
@@ -52,10 +48,16 @@ header {
     font-style: normal;
     color: white;
     background: url('../images/bg-pic-header.jpg') no-repeat center/cover;
+    width: 100%;
+    height: 690px;
+    position: relative;
 }
 
 *, *::before, *::after {
     box-sizing: inherit;
+}
+main, body{
+    z-index: 1;
 }
 
 /* Header */
@@ -71,7 +73,7 @@ header {
 }
 
 .logoInno {
-    margin: 45px 4% auto 8.25%;
+    margin: 53px 1% auto 8%;
 }
 
 .row1, .row2 {
@@ -86,16 +88,30 @@ header {
 
 .row1 {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap-reverse;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: center;
+    flex-direction: row
 }
 
 .row2 {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     margin-top: 14px;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
     text-transform: uppercase;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+}
+
+.row2 li {
+    margin-right: 55px;
+}
+
+.row2 li:first-child {
+    margin-left: 30px;
 }
 
 .row1 {
@@ -112,7 +128,7 @@ header {
     display: flex;
     align-items: flex-start;
     justify-content: space-evenly;
-    margin: 45px 9.25% auto auto;
+    margin: 48px 7.8% auto auto
 }
 
 .lang__sel p {
@@ -124,8 +140,10 @@ header {
 }
 
 .row1>p, .row1>button {
-    margin: auto;
     white-space: nowrap;
+    margin-top: 0px;
+    margin-left: 31px;
+    margin-right: 24px;
 }
 
 .link__underline {
@@ -168,6 +186,7 @@ button.callback:hover {
     text-align: left;
     height: fit-content;
     margin: auto 4px;
+    padding-right: 12px;
 }
 
 .callback svg {
@@ -196,35 +215,33 @@ header div h2 {
     line-height: 53px;
     text-align: center;
     color: #FFFFFF;
-    margin: 14px auto 0;
-    padding-bottom: 200px;
+    margin: 20px auto 0;
+    padding-bottom: 190px;
 }
 
 .nav__titles:after {
     content: '';
     display: block;
-    border-top: 100px solid transparent;
-    border-right: 97vw solid #fff;
-    /* border-left: 10px solid #000;
-    border-bottom: 10px solid #000; */
-    position: relative;
-    left: 0;
-    bottom: 0;
+    border-top: 150px solid transparent;
+    border-right: 99vw solid #fff;
+    position: absolute;
+    bottom: 0px;
+    right: 0
 }
 
 /* Блок Почему мы? Block00 Block01 */
 
 .block00 {
-    width: 426px;
-    height: 221px;
+    width: 37.9%;
+    min-height: 221px;
     background: #FFFFFF;
     box-shadow: 0px 27px 39px rgba(163, 204, 64, 0.18);
     border-radius: 10px;
     display: block;
     position: relative;
     left: 50%;
-    top: -100px;
-    margin-bottom: -150px;
+    top: -165px;
+    margin-bottom: -212px;
     z-index: 0;
 }
 
@@ -236,8 +253,8 @@ header div h2 {
     /* identical to box height */
     color: #333333;
     padding: 30px 0 0;
-    margin: 0 auto 25px;
-    text-align: center;
+    margin: 0 auto 23px 49px;
+    text-align: left;
 }
 
 .block00 p {
@@ -247,16 +264,18 @@ header div h2 {
     line-height: 14px;
     color: #333333;
     text-align: justify;
-    margin: 0 47px 5px;
+    margin: 0 47px 12px;
+    max-width: 315px;
+    text-align: left;
 }
 
 section h3 {
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 48px;
     line-height: 62px;
     color: #A3CC40;
-    margin-left: 12.5%;
+    margin-left: 12%;
     z-index: 5;
 }
 
@@ -264,8 +283,16 @@ section h3 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    margin: 84px auto 0;
+    justify-content: space-between;
+    margin: 82px 12.3% 0;
+    align-content: center;
+    align-items: center;
+}
+
+.block01__advant>div {
+    width: 245px;
+    height: 338px;
+    margin: 0 0 30px;
 }
 
 .block01__advant h4 {
@@ -289,12 +316,6 @@ section h3 {
     margin: 25px auto 0;
 }
 
-.block01__advant>div {
-    width: 245px;
-    height: 338px;
-    margin: 0 13px 25px;
-}
-
 ol li {
     color: blue;
 }
@@ -311,7 +332,7 @@ form {
 /* Блок с таблицей "Выберите фильм" */
 
 .block03 {
-    margin-top: 80px;
+    margin-top: 115px;
 }
 
 td, th {
@@ -320,17 +341,16 @@ td, th {
     font-size: 14px;
     line-height: 18px;
     text-align: left;
-    padding: 14px 15px;
+    padding: 14px 0px;
 }
 
 table {
     border-collapse: collapse;
-    margin: 0 auto;
     color: #FFFFFF;
     overflow: hidden;
     border-radius: 10px;
-    margin: 84px auto 30px;
-    max-width: 849px;
+    margin: 84px auto 0px;
+    width: 75.53%;
     table-layout: fixed;
 }
 
@@ -340,7 +360,11 @@ table {
     font-weight: 600;
     font-size: 20px;
     line-height: 1.3;
-    padding: 10px;
+    padding: 10px 0px;
+}
+
+.block03__table th.block03__table__thirdcol>:first-child {
+    margin-right: 10px;
 }
 
 .block03__table tr td {
@@ -351,18 +375,19 @@ table {
     background: #4C4D4F;
 }
 
-.block03__table__firstcol {
-    width: 46px;
-    text-align: center;
+.block03__table .block03__table__firstcol {
+    width: 81px;
+    text-align: left;
+    padding-left: 25px
 }
 
-/* #block03__table__secondcol {
-    width: 210px;
-} */
+.block03__table .block03__table__secondcol {
+    width: 235px;
+}
 
-/* #block03__table__thirdcol {
-    width: 220px;
-} */
+.block03__table__thirdcol {
+    width: 242px;
+}
 
 /* #block03__table__fourcol {
     width: 272px;
@@ -381,7 +406,7 @@ table {
     text-align: center;
     color: #333333;
     width: 539px;
-    margin: 0px auto 30px;
+    margin: 28px auto 0px;
     padding: 0px 10px 40px;
     vertical-align: top;
 }
@@ -389,19 +414,22 @@ table {
 /* Блок с подарком */
 
 .block04 {
+    position: relative;
+    margin-top: 67px;
+    padding-bottom: 125px;
     background: url("../images/bg_block02.jpg") no-repeat center/cover;
+    z-index: 1;
 }
 
 .block04::before {
     content: '';
     display: block;
-    /* border-top: 100px solid transparent;
-    border-right: 97vw solid #fff; */
     border-left: 97vw solid #fff;
-    border-bottom: 100px solid transparent;
-    position: relative;
+    border-bottom: 116px solid transparent;
+    position: absolute;
     left: 0;
     top: 0;
+    z-index: 0;
 }
 
 .block04::after {
@@ -411,22 +439,24 @@ table {
     border-right: 97vw solid #fff;
     /* border-left: 97vw solid #fff;
     border-bottom: 100px solid transparent; */
-    position: relative;
-    left: 0;
+    position: absolute;
+    right: 0;
     bottom: 0;
+    z-index: 0;
 }
 
 .block04>div {
     display: inline-block;
+    z-index: 2;
 }
 
-.block04__rightside {
-    margin: 30px auto auto 12.8%;
+.block04__lefttside {
+    margin: 30px auto auto 12.2%;
     position: relative;
-    top: -300px;
+    top: -234px;
 }
 
-.block04__rightside img {
+.block04__lefttside img {
     max-width: 278px;
     max-height: 278px;
     border-radius: 50%;
@@ -434,35 +464,39 @@ table {
     height: 25vw;
 }
 
-.block04__leftside {
+.block04__rightside {
     max-width: 548px;
     margin-right: auto;
     position: relative;
     width: 50.8%;
     bottom: -10vw;
+    margin-left: 24px;
 }
 
-.block04__leftside>* {
+.block04__rightside>* {
     text-align: right;
     float: right;
 }
 
-.block04__leftside h3 {
-    font-weight: 500;
+.block04__rightside h3 {
+    font-weight: 600;
     font-size: 48px;
     line-height: 62px;
     color: white;
     margin-bottom: 38px;
 }
 
-.block04__leftside p {
+.block04__rightside p {
     font-weight: 100;
     font-size: 11px;
     line-height: 14px;
     color: white;
-    margin-bottom: 10px;
+    margin-bottom: 18px;
 }
-
+.block04__rightside p:last-of-type {
+    
+    margin-bottom: 28px;
+}
 .block04__button {
     background: #A3CC40;
     border-radius: 6px;
@@ -474,7 +508,6 @@ table {
     color: white;
     white-space: nowrap;
     text-align: center;
-    margin-top: 26px;
     border-style: none;
     transition: all 0.3s cubic-bezier(0.4, 0, 1, 1)
 }
@@ -505,7 +538,7 @@ form button {
 /* Блок с выбором в виде мозайкой фильмов  */
 
 .block05 {
-    margin-top: 45px;
+    margin-top: 55px;
 }
 
 .block05 p {
@@ -622,13 +655,13 @@ li.movieSelect p {
 }
 
 .block06__list {
-    margin: 57px auto 0;
+    
     display: flex;
     flex-flow: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-wrap: wrap;
     margin: 57px 12.5% 0;
-    position: relative;
+    
 }
 
 ul.block06__list li {
@@ -641,6 +674,7 @@ ul.block06__list li {
     justify-content: flex-end;
     position: relative;
     margin-bottom: 10px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 ul.block06__list li div {
@@ -700,8 +734,7 @@ ul.block06__list li div h4 {
 }
 
 .block07__prev {
-    margin: 0 12.5% 0;
-    padding: 126px 0 143px;
+    padding: 129px 0 122px;
     position: relative;
 }
 
@@ -711,8 +744,8 @@ ul.block06__list li div h4 {
     /* border-top: 100px solid transparent;
     border-right: 97vw solid #fff; */
     border-left: 97vw solid #fff;
-    border-bottom: 100px solid transparent;
-    position: relative;
+    border-bottom: 86px solid transparent;
+    position: absolute;
     left: 0;
     top: 0;
 }
@@ -720,28 +753,24 @@ ul.block06__list li div h4 {
 .block07::after {
     content: '';
     display: block;
-    border-top: 100px solid transparent;
+    border-top: 72px solid transparent;
     border-right: 97vw solid #fff;
-    /* border-left: 97vw solid #fff;
-    border-bottom: 100px solid transparent; */
-    position: relative;
-    left: 0;
+    position: absolute;
+    right: 0;
     bottom: 0;
 }
 
-.block07 h3 {
-    margin-left: 0;
-}
 
 .block07__prev p {
+    margin-left: 12.3%;
     color: #FFF;
     font-style: normal;
     font-weight: normal;
     font-size: 11px;
-    line-height: 1.26rem;
-    margin-top: 26px;
+    line-height: 1.2rem;
+    margin-top: 20px;
     display: inline-block;
-    max-width: 548px;
+    max-width: 548px
 }
 
 .block07__list {
@@ -764,7 +793,7 @@ ul.block06__list li div h4 {
 }
 
 .block07__listcontainer {
-    margin-top: 99px;
+    margin-top: 65px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -835,14 +864,14 @@ ul.block06__list li div h4 {
 /* Блок с обратной связью*/
 
 .block08__container {
-    flex-basis: 767px;
+    
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-content: stretch;
     justify-content: center;
     align-items: stretch;
-    padding-top: 43px;
+    padding-top: 37px;
     padding-bottom: 61px;
 }
 
@@ -852,6 +881,8 @@ ul.block06__list li div h4 {
     overflow: hidden;
     flex-shrink: 20;
     position: relative;
+    height: 527px;
+    flex-basis: 366px;
 }
 
 .block08__formcontainer {
@@ -859,7 +890,7 @@ ul.block06__list li div h4 {
     border-radius: 0px 20px 20px 0px;
     overflow: hidden;
     position: relative;
-    flex-basis: 406px;
+    flex-basis: 414px;
     flex-shrink: 1;
 }
 
@@ -887,8 +918,8 @@ ul.block06__list li div h4 {
     line-height: 32px;
     color: #A3CC40;
     width: 344px;
-    margin: 31px auto 0;
-    text-align: center;
+    margin: 31px auto 0 88px;
+    text-align: left
 }
 
 input#username {
@@ -979,44 +1010,53 @@ input[type="checkbox"]#agreement:checked+label::before {
 }
 
 .block08__argeementform {
-    margin-top: 29px;
+    margin-top: 22px;
     margin-left: 20px;
 }
 
 .block08__argeementbtn {
-    margin-top: 42px;
-    margin-left: 20px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-top: 46px;
+    margin-left: 18px;
     border: none;
 }
 
 /* Блок с картой*/
 
 .block09 {
-    margin: 61px auto 0;
+    margin: 0 auto;
     max-width: 973px;
+    z-index: 1;
+}
+#imgMap {
+    width: 100%;
+    border-radius: 20px;
+    z-index: inherit;
 }
 
 /* Footer */
 
 footer {
     width: 100%;
-    height: 362px;
+    height: 360px;
     background: #A3CC40;
-    margin-top: -20px;
+    margin-top: -22px;
     z-index: 9;
-    color: white;
+    color: white
 }
 
 .footer__container {
-    padding-top: 89px;
+    padding-top: 84px;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
     align-content: space-around;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: flex-start;
     position: relative;
 }
+
 
 .footer__container::before {
     content: ' ';
@@ -1039,7 +1079,7 @@ footer {
 }
 
 .footer__firstcol {
-    flex-basis: 43%;
+    flex-basis: 47%;
     height: 244px;
     flex-shrink: 3;
     padding-left: 89px;
@@ -1066,6 +1106,7 @@ footer {
     justify-content: flex-end;
     align-content: space-between;
     align-items: center;
+    padding-bottom: 24px;
 }
 
 .footer__icons>* {
@@ -1096,9 +1137,11 @@ footer {
     background: rgb(243, 241, 241);
     transition: all 0.2s cubic-bezier(0.4, 0, 1, 1);
 }
+
 .footer__icons div:hover path[fill="white"] {
-    fill:rgba(163, 204, 64, 0.8);
+    fill: rgba(163, 204, 64, 0.8);
     transition: all 0.4s cubic-bezier(0.4, 0, 1, 1);
+    
 }
 
 .footer__firstcolrights {
@@ -1135,17 +1178,17 @@ footer {
     align-items: flex-start;
 }
 
-.footer__secondcol p:first-child {
+.footer__secondcol p:first-of-type {
     padding-top: 22px;
 }
 
 .footer__secondcol p {
-    padding-top: 12px;
+    padding-top: 14px;
 }
 
 .footer__thirdcol {
-    flex-basis: 140px;
-    padding-right: 254px;
+    flex-basis: 160px;
+    
     height: 244px;
     flex-shrink: 5;
     font-family: IBM Plex Sans;
@@ -1170,7 +1213,7 @@ footer {
     line-height: 26px;
 }
 
-.footer__thirdcol p:first-child {
+.footer__thirdcol p:first-of-type {
     padding-top: 22px;
 }
 
@@ -1244,17 +1287,11 @@ footer {
 }
 
 #backPoster {
-    height: 527px;
-    width: 387px;
+    
     background: url('../images/bg-feedbacksection.png') no-repeat center / cover;
 }
 
-#imgMap {
-    max-height: 421px;
-    max-width: 973px;
-    min-width: 320xpx;
-    border-radius: 20px;
-}
+
 
 .block03__table__firstcol:hover svg {
     fill: #A3CC40;

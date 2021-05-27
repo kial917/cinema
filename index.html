@@ -127,7 +127,7 @@
             <div class="lang__sel">
                 <p>RU</p>
 
-                <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                         d="M4.00406 3.8728L0.824164 0.692904L1.38985 0.127219L4.00406 2.74143L6.61827 0.127219L7.18396 0.692905L4.00406 3.8728Z"
                         fill="white" />
@@ -239,8 +239,8 @@
                     <thead>
                         <tr>
                             <th class="block03__table__firstcol"></th>
-                            <th><span>Начало сеанса</span> <span>&#x25B4;</span></th>
-                            <th><span>Название фильма</span> <span>&#x25BE;</span></th>
+                            <th class="block03__table__secondcol"><span>Начало сеанса</span> <span>&#x25B4;</span></th>
+                            <th class="block03__table__thirdcol"><span>Название фильма</span> <span>&#x25BE;</span></th>
                             <th>Жанр</th>
                         </tr>
                     </thead>
@@ -257,8 +257,8 @@
 
 
                             </td>
-                            <td>10:00</td>
-                            <td><a href="https://www.kinopoisk.ru/film/838/" target="_blank">Человек-паук</a> </td>
+                            <td class="block03__table__secondcol">10:00</td>
+                            <td class="block03__table__thirdcol"><a href="https://www.kinopoisk.ru/film/838/" target="_blank">Человек-паук</a> </td>
                             <td>Фантастика, боевик,
                                 приключения</td>
                         </tr>
@@ -271,8 +271,8 @@
                                         fill="white" />
                                 </svg>
                             </td>
-                            <td>12:00</td>
-                            <td><a href="https://www.kinopoisk.ru/film/1122114/" target="_blank">Собачья жизнь 2</a>
+                            <td class="block03__table__secondcol">12:00</td>
+                            <td class="block03__table__thirdcol"><a href="https://www.kinopoisk.ru/film/1122114/" target="_blank">Собачья жизнь 2</a>
                             </td>
                             <td>Фэнтэзи, драма, комедия</td>
                         </tr>
@@ -285,8 +285,8 @@
                                         fill="white" />
                                 </svg>
                             </td>
-                            <td>14:00</td>
-                            <td><a href="https://www.kinopoisk.ru/film/846824/" target="_blank">История игрушек 4</a>
+                            <td class="block03__table__secondcol">14:00</td>
+                            <td class="block03__table__thirdcol"><a href="https://www.kinopoisk.ru/film/846824/" target="_blank">История игрушек 4</a>
                             </td>
                             <td>Мультфильм, фэнтэзи, комедия</td>
                         </tr>
@@ -299,8 +299,8 @@
                                         fill="white" />
                                 </svg>
                             </td>
-                            <td>16:00</td>
-                            <td><a href="https://www.kinopoisk.ru/film/693730/" target="_blank">Люди в чёрном:
+                            <td class="block03__table__secondcol">16:00</td>
+                            <td class="block03__table__thirdcol"><a href="https://www.kinopoisk.ru/film/693730/" target="_blank">Люди в чёрном:
                                     Интэрнэшнл</a>
                             </td>
                             <td>Фантастика, боевик, комедия</td>
@@ -318,9 +318,9 @@
 
         </section>
         <section class="block04" id="present-section">
-            <div class="block04__rightside"><img id="imgPresent" src="./images/pic-present.png"
+            <div class="block04__lefttside"><img id="imgPresent" src="./images/pic-present.png"
                     alt="Изображение подарка" title="красивый подарок"></div>
-            <div class="block04__leftside">
+            <div class="block04__rightside">
                 <h3>Подарок каждому!</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quisquam impedit quidem magni,
                     repellendus, aliquam saepe incidunt error corporis iste dolore consectetur! Ratione aliquam, porro
@@ -531,7 +531,7 @@
                         <div>
                             <label for="seatnumber" class="visuallyhidden">Номер места</label>
                             <select name="seatnumber" id="seatnumber" size="1">
-                                <option selected>Выберите место</option>
+                                <option selected>Номер места</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
@@ -686,7 +686,7 @@
             <div class="footer__thirdcol">
                 <h4>contact</h4>
                 <p><a href="tel:+78003551256">+7 (800) 355 12-56</a></p>
-                <p><a class="link__underline" href="mailto:kino@innopolis.ru">kino@innopolis.ru</a></p>
+                <p><a href="mailto:kino@innopolis.ru">kino@innopolis.ru</a></p>
                 <p>420500, г. Иннополис ул.Университетская, д.1</p>
                 <p>как добраться</p>
                 <p>все контакты</p>
@@ -713,12 +713,12 @@
                     <label for="selectgift" class="visuallyhidden">Номер места</label>
                     <select name="selectgift" id="selectgift" size="1">
                         <option selected>Выберите подарок</option>
-                        <option value="1">Автограф Клуни</option>
-                        <option value="2">Поезда в Голливуд</option>
-                        <option value="3">Машина</option>
-                        <option value="4">Закрыть ипотеку</option>
-                        <option value="5">Красивая ручка</option>
-                        <option value="6">Спасибо от Сбера</option>
+                        <option value="Автограф Клуни">Автограф Клуни</option>
+                        <option value="Поездка в Голливуд">Поездка в Голливуд</option>
+                        <option value="Машина">Машина</option>
+                        <option value="Закрыть ипотеку">Закрыть ипотеку</option>
+                        <option value="Красивая ручка">Красивая ручка</option>
+                        <option value="Спасибо от Сбера">Спасибо от Сбера</option>
                     </select>
                 </div>
                 <div class="modal__argeementform">
