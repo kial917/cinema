@@ -74,19 +74,16 @@
 }
 
 button.owl-prev span {
-  left: 35%;
+  left: 32.5%;
   top: 11%;
 }
 
 button.owl-next span {
-  left: 63.8%;
+  left: 66.8%;
   top: 11%;
 }
 
 div.owl-stage-outer {
   padding: 22px 0;
   margin: auto;
-}
-.active:first{
-    border: 5px red solid;
 }
