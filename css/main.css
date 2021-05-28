@@ -49,14 +49,15 @@ header {
     color: white;
     background: url('../images/bg-pic-header.jpg') no-repeat center/cover;
     width: 100%;
-    height: 690px;
+    height: 670px;
     position: relative;
 }
 
 *, *::before, *::after {
     box-sizing: inherit;
 }
-main, body{
+
+main, body {
     z-index: 1;
 }
 
@@ -222,7 +223,7 @@ header div h2 {
 .nav__titles:after {
     content: '';
     display: block;
-    border-top: 150px solid transparent;
+    border-top: 130px solid transparent;
     border-right: 99vw solid #fff;
     position: absolute;
     bottom: 0px;
@@ -230,6 +231,9 @@ header div h2 {
 }
 
 /* Блок Почему мы? Block00 Block01 */
+.block01{
+    margin-top: 20px;
+}
 
 .block00 {
     width: 37.9%;
@@ -469,7 +473,7 @@ table {
     margin-right: auto;
     position: relative;
     width: 50.8%;
-    bottom: -10vw;
+    bottom: -116px;
     margin-left: 24px;
 }
 
@@ -493,10 +497,11 @@ table {
     color: white;
     margin-bottom: 18px;
 }
+
 .block04__rightside p:last-of-type {
-    
     margin-bottom: 28px;
 }
+
 .block04__button {
     background: #A3CC40;
     border-radius: 6px;
@@ -640,7 +645,7 @@ li.movieSelect p {
 /* Блок с выбором товаров  */
 
 .block06 {
-    margin-top: 79px;
+    margin-top: 84px;
 }
 
 .block06 p {
@@ -655,13 +660,11 @@ li.movieSelect p {
 }
 
 .block06__list {
-    
     display: flex;
     flex-flow: row;
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 57px 12.5% 0;
-    
 }
 
 ul.block06__list li {
@@ -734,7 +737,7 @@ ul.block06__list li div h4 {
 }
 
 .block07__prev {
-    padding: 129px 0 122px;
+    padding: 128px 0 122px;
     position: relative;
 }
 
@@ -760,22 +763,19 @@ ul.block06__list li div h4 {
     bottom: 0;
 }
 
-
-.block07__prev p {
+.block07__prev> p {
     margin-left: 12.3%;
     color: #FFF;
     font-style: normal;
     font-weight: normal;
     font-size: 11px;
-    line-height: 1.2rem;
-    margin-top: 20px;
+    line-height: 1rem;
+    margin-top: 23px;
     display: inline-block;
-    max-width: 548px
+    max-width: 548px;
 }
 
 .block07__list {
-    /* width: 246px;
-    height: 332px; */
     width: 210px;
     height: 284px;
     background: #97B13C;
@@ -785,6 +785,13 @@ ul.block06__list li div h4 {
     margin-top: 10px;
     transition: 0.1s;
     text-align: right;
+    align-items: center;
+}
+
+.owl-item {
+    padding: 0;
+    margin: 0;
+    width: 200px;
 }
 
 .owl-item.active.center {
@@ -792,8 +799,15 @@ ul.block06__list li div h4 {
     transform: scale(1.17);
 }
 
+
+
+.block07__list {
+    margin: 0 auto;
+    ;
+}
+
 .block07__listcontainer {
-    margin-top: 65px;
+    margin-top: 74px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -833,7 +847,7 @@ ul.block06__list li div h4 {
 }
 
 .block07__list div h4 {
-    margin-top: 17px;
+    margin-top: 15px;
     font-style: normal;
     font-weight: 600;
     font-size: 15px;
@@ -853,7 +867,7 @@ ul.block06__list li div h4 {
 }
 
 .block07__list div p:last-child {
-    margin-top: 14px auto;
+    margin-top: 22px auto;
     text-align: right;
     font-style: normal;
     font-weight: 300;
@@ -864,7 +878,6 @@ ul.block06__list li div h4 {
 /* Блок с обратной связью*/
 
 .block08__container {
-    
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -1029,6 +1042,7 @@ input[type="checkbox"]#agreement:checked+label::before {
     max-width: 973px;
     z-index: 1;
 }
+
 #imgMap {
     width: 100%;
     border-radius: 20px;
@@ -1047,7 +1061,7 @@ footer {
 }
 
 .footer__container {
-    padding-top: 84px;
+    padding-top: 86px;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
@@ -1056,7 +1070,6 @@ footer {
     align-items: flex-start;
     position: relative;
 }
-
 
 .footer__container::before {
     content: ' ';
@@ -1141,7 +1154,6 @@ footer {
 .footer__icons div:hover path[fill="white"] {
     fill: rgba(163, 204, 64, 0.8);
     transition: all 0.4s cubic-bezier(0.4, 0, 1, 1);
-    
 }
 
 .footer__firstcolrights {
@@ -1188,7 +1200,6 @@ footer {
 
 .footer__thirdcol {
     flex-basis: 160px;
-    
     height: 244px;
     flex-shrink: 5;
     font-family: IBM Plex Sans;
@@ -1287,11 +1298,8 @@ footer {
 }
 
 #backPoster {
-    
     background: url('../images/bg-feedbacksection.png') no-repeat center / cover;
 }
-
-
 
 .block03__table__firstcol:hover svg {
     fill: #A3CC40;

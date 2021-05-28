@@ -67,21 +67,26 @@
   background: #869791;
 }
 
-.owl-theme .owl-nav span{
+.owl-theme .owl-nav span {
   color: #A3CC40;
   position: absolute;
   font-size: 2.5rem;
 }
 
-button.owl-prev span{
-  left: 31%;
-  top: 19%;
-}
-button.owl-next span{
-  left: 65.7%;
-  top: 19%;
+button.owl-prev span {
+  left: 35%;
+  top: 11%;
 }
 
-div.owl-stage-outer{
-  padding: 22px;
+button.owl-next span {
+  left: 63.8%;
+  top: 11%;
+}
+
+div.owl-stage-outer {
+  padding: 22px 0;
+  margin: auto;
+}
+.active:first{
+    border: 5px red solid;
 }

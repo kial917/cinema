@@ -4,9 +4,10 @@ $(document).ready(function(){
         nav: true,
         dots: false,
         items: 3,
-        margin: 0,
-        // autoplay: true,
-        autoplayHoverPause: true,
+        margin:0,
         center: true,
+        stagePadding: 0,
+        merge: true,
+
     });
   });
