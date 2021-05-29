@@ -1223,6 +1223,7 @@ position: relative;
     box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
     background: rgb(243, 241, 241);
     transition: all 0.2s cubic-bezier(0.4, 0, 1, 1);
+    cursor: pointer;
 }
 
 .footer__iconcontainer:hover svg path[fill="white"] {

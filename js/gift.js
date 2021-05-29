@@ -70,7 +70,8 @@ const HadleSubmit = (event) => {
 
 
     fetch(url.toString());
-    popupToggle;
+    
+    
 };
 
 inputGiftForm.addEventListener('submit', HadleSubmit)
