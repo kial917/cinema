@@ -806,7 +806,7 @@ ul.block06__list li div h4 {
 }
 
 .block07__owlwrapper {
-    width: 85% ;
+    width: 85%;
     margin: 0 auto;
 }
 
@@ -927,6 +927,10 @@ ul.block06__list li div h4 {
     background: #FFFFFF;
 }
 
+.block08__form>div {
+    position: relative;
+}
+
 .block08__form h4 {
     font-family: IBM Plex Sans;
     font-style: normal;
@@ -943,14 +947,61 @@ input#username {
     margin: 20px auto 0 20px;
     width: 344px;
     background: #DEDEDE;
-    border: none;
+    border: 1px solid transparent;
     height: 40px;
     color: #A1A1A1;
     font-size: 15px;
     line-height: 1.26em;
     padding-left: 16px;
-    padding-top: 10px;
+    padding-top: 12px;
     border-radius: 5px;
+    transition: 0.1s;
+}
+
+.block08__form label {
+    font-size: 15px;
+    line-height: 1.26em;
+    background: transparent;
+    position: absolute;
+    transition: 0.1s;
+}
+
+label[for="username"] {
+    left: 36px;
+    top: 36px;
+    color: #A1A1A1;
+}
+
+label[for="seatnumber"] {
+    color: #A1A1A1;
+    left: 40px;
+    top: 46px;
+}
+
+label[for="feedback-area"] {
+    color: #A1A1A1;
+    left: 34px;
+    top: 44px;
+}
+
+input#username:hover ~label[for="username"],
+select#seatnumber:hover ~label[for="seatnumber"],
+textarea#feedback-area:hover ~label[for="feedback-area"] {
+    transform: translateY(-28px);
+    background: #FFFFFF;
+    transition: 0.1s;
+
+}
+
+input#username:hover,
+select#seatnumber:hover,
+textarea#feedback-area:hover
+{
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    border-radius: 5px;
+    box-shadow: 0 0 0 5px rgba(170, 243, 77, 0.52);
+    transition: 0.1s;
 }
 
 input#username::-webkit-input-placeholder {
@@ -1045,6 +1096,7 @@ input[type="checkbox"]#agreement:checked+label::before {
     margin: 0 auto;
     max-width: 973px;
     z-index: 1;
+    position: relative;
 }
 
 #imgMap {
@@ -1061,7 +1113,8 @@ footer {
     background: #A3CC40;
     margin-top: -22px;
     z-index: 9;
-    color: white
+    color: white;
+    position: relative;
 }
 
 .footer__container {
@@ -1120,13 +1173,14 @@ footer {
 .footer__icons {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-content: space-between;
     align-items: center;
     padding-bottom: 24px;
+    width: 285px;
 }
 
-.footer__icons>* {
+/* .footer__icons>* {
     margin-right: 48px;
     padding-left: 7.5px;
     width: 15px;
@@ -1134,9 +1188,9 @@ footer {
     position: relative;
     z-index: 1;
     overflow: visible;
-}
+} */
 
-.footer__icons>::after {
+/* .footer__icons>::after {
     content: ' ';
     width: 31px;
     height: 31px;
@@ -1147,15 +1201,31 @@ footer {
     background: rgba(190, 233, 86, 1);
     z-index: -1;
     transition: all 0.3s cubic-bezier(0.4, 0, 1, 1);
+} */
+.footer__iconcontainer{
+width: 31px;
+height: 31px;
+box-sizing: border-box;
+border-radius: 100%;
+background: rgba(190, 233, 86, 1);
+transition: all 0.3s cubic-bezier(0.4, 0, 1, 1);
+position: relative;
+}
+.footer__iconcontainer svg{
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 30%
 }
 
-.footer__icons div:hover::after {
+.footer__iconcontainer:hover{
     box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
     background: rgb(243, 241, 241);
     transition: all 0.2s cubic-bezier(0.4, 0, 1, 1);
 }
 
-.footer__icons div:hover path[fill="white"] {
+.footer__iconcontainer:hover svg path[fill="white"] {
     fill: rgba(163, 204, 64, 0.8);
     transition: all 0.4s cubic-bezier(0.4, 0, 1, 1);
 }
@@ -1305,7 +1375,7 @@ footer {
     background: url('../images/bg-feedbacksection.png') no-repeat center / cover;
 }
 
-.block03__table__firstcol:hover svg {
+.footer__icons svg :hover  {
     fill: #A3CC40;
     transition: all .8s ease;
 }

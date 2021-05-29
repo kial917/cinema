@@ -40,6 +40,17 @@
 .modal__inputwrapper{
     padding-top: 90px;
     padding-left: 20px;
+    
+}
+
+.modal__inputwrapper label {
+    font-size: 15px;
+    line-height: 1.26em;
+    background: transparent;
+    position: absolute;
+    transition: 0.1s;
+    background: red;
+    
 }
 
 input#usernamegift, input#emailgift {
