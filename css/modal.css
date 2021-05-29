@@ -1,24 +1,24 @@
-.popup{
+.popup {
     position: fixed;
     bottom: 0;
-    top:0;
+    top: 0;
     left: 0;
     right: 0;
     background: rgba(51, 51, 51, 0.24);
     z-index: 9;
 }
-.form-wrapper{
+
+.form-wrapper {
     background: #fff;
     margin: 50vh auto;
     max-width: 600px;
     min-height: 500px;
     border-radius: 40px;
     position: relative;
-    top:-200px;
-
+    top: -200px;
 }
 
-.close{
+.close {
     position: absolute;
     top: 22px;
     right: 22px;
@@ -28,19 +28,25 @@
     background: transparent;
     background-image: url(/images/btn-close.svg);
 }
-.close:hover{
+
+.close:hover {
     background-image: url(/images/btn-close-hover.svg);
 }
-.hidden{
+
+.hidden {
     display: none;
 }
 
-/* Стилизация input полей */
+/* Стилизация input полей и label */
 
-.modal__inputwrapper{
+.modal__inputwrapper {
     padding-top: 90px;
     padding-left: 20px;
-    
+    position: relative;
+}
+
+.modal__inputwrapper>div {
+    position: relative;
 }
 
 .modal__inputwrapper label {
@@ -49,11 +55,27 @@
     background: transparent;
     position: absolute;
     transition: 0.1s;
-    background: red;
-    
-}
+    white-space: nowrap;
+    }
 
-input#usernamegift, input#emailgift {
+label[for="usernamegift"] {
+    left: 36px;
+    top: 36px;
+    color: #A1A1A1;
+}
+label[for="emailgift"] {
+    color: #A1A1A1;
+    left: 36px;
+    top: 34px;
+}
+label[for="selectgift"] {
+    color: #A1A1A1;
+    left: 40px;
+    top: 34px;
+}
+input#usernamegift, 
+input#emailgift,
+select#selectgift {
     margin: 20px auto 0 20px;
     width: 500px;
     background: #DEDEDE;
@@ -67,27 +89,32 @@ input#usernamegift, input#emailgift {
     border-radius: 5px;
 }
 
-input#usernamegift::-webkit-input-placeholder, input#emailgift::-webkit-input-placeholder{
-    color: #A1A1A1;
+input#usernamegift:hover ~label[for="usernamegift"],
+input#emailgift:hover ~label[for="emailgift"],
+select#selectgift:hover ~label[for="selectgift"] {
+    transform: translateY(-26px);
+    background: #FFFFFF;
+    transition: 0.1s;
+
 }
 
-input#usernamegift::-moz-placeholder,  input#emailgift::-moz-placeholder{
-    color: #A1A1A1;
-}
-
-select#selectgift {
-    margin: 31px auto 0 20px;
-    width: 500px;
-    background: #DEDEDE;
-    border: none;
-    height: 40px;
-    color: #A1A1A1;
-    font-size: 15px;
-    line-height: 19px;
-    padding-left: 16px;
-    padding-top: 8px;
+input#usernamegift:hover,
+input#emailgift:hover,
+select#selectgift:hover
+{
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
     border-radius: 5px;
-    padding-right: 15px;
+    box-shadow: 0 0 0 5px rgba(170, 243, 77, 0.52);
+    transition: 0.1s;
+}
+
+input#usernamegift::-webkit-input-placeholder, input#emailgift::-webkit-input-placeholder {
+    color: #A1A1A1;
+}
+
+input#usernamegift::-moz-placeholder, input#emailgift::-moz-placeholder {
+    color: #A1A1A1;
 }
 
 
@@ -128,7 +155,7 @@ input[type="checkbox"]#agreementforgift:checked+label::before {
     margin-left: 20px;
     border: none;
     width: 500px;
-        background: #A3CC40;
+    background: #A3CC40;
     border-radius: 6px;
     font-size: 20px;
     line-height: 2.5rem;
@@ -137,5 +164,7 @@ input[type="checkbox"]#agreementforgift:checked+label::before {
     align-items: center;
     text-align: center;
     color: #FFFFFF;
-    
 }
+/* Стилизация полей при наведении и модификаторах */
+
+
