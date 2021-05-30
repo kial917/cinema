@@ -531,14 +531,15 @@
                 <div class="block08__formcontainer">
                     <form class="blank block08__form">
                         <h4>Обратная связь</h4>
-                        <input type="hidden" name="source" value="cinemasite">
+                        <input  type="hidden" name="source" value="cinemasite">
                         <div class="filled">
-                            <input type="text" id="username" name="username" value="" required>
-                            <label for="username">Полное имя</label>
+                            <input type="text" class="st-username-error st-username-focused" id="username" name="username" value="">
+                            <label class="st-usernamelabel-focused" for="username">Полное имя</label>
+                            <p class="st-username-error-msg">упс..вы что то забыли</p>
                         </div>
                         <div class="filled">
-                            <select name="seatnumber" id="seatnumber" size="1">
-                                <option selected></option>
+                            <select  class="st-username-error st-username-focused" name="seatnumber" id="seatnumber" size="1">
+                                <option selected disabled></option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
@@ -546,11 +547,15 @@
                                 <option value="5">5</option>
                                 <option value="6">6</option>
                             </select>
-                            <label for="seatnumber">Номер места</label>
+                            <label class="st-usernamelabel-focused" for="seatnumber">Номер места</label>
+                            <p class="st-username-error-msg">упс..вы что то забыли</p>
                         </div>
                         <div class="filled">
-                            <textarea id="feedback-area" name="feedback-area" rows="10" cols="15" required></textarea>
-                            <label for="feedback-area">Напишите свой отзыв</label></div>
+                            <textarea id="feedback-area" class="st-username-error st-username-focused" name="feedback-area" rows="10" cols="15"></textarea>
+                            <label class="st-usernamelabel-focused" for="feedback-area">Напишите свой отзыв</label>
+                            <p class="st-username-error-msg">упс..вы что то забыли</p>
+                            
+                        </div>
                         <div class="block08__argeementform">
                             <input id="agreement" class="visuallyhidden" type="checkbox" required>
                             <label for="agreement">Я согласен на обработку своих персональных данных</label>
@@ -718,20 +723,20 @@
             </button>
             <form id="inputs-giftform" class="modal__inputwrapper">
                 <div class="filled-gift">
-                    <input type="text" id="usernamegift" name="usernamegift" value="0" 
-                        required>
-                    <label for="usernamegift">Полное имя</label>
-                    <p class="st-usernamegift-error-msg">ошибка</p>
+                    <input type="text" class="st-usernamegift-error st-usernamegift-focused" data-target="input" id="usernamegift" name="usernamegift"
+                      >
+                    <label class="st-usernamegiftlabel-focused" for="usernamegift">Полное имя</label>
+                    <p class="st-usernamegift-error-msg">упс..вы что то забыли</p>
                 </div>
                 <div class="filled-gift">
-                    <input type="text" id="emailgift" name="emailgift" value="0" required>
-                    <label for="emailgift">Введите емайл</label>
-                    <p class="st-usernamegift-error-msg">ошибка</p>
+                    <input type="text" class="st-usernamegift-error st-usernamegift-focused" data-target="input" id="emailgift" name="emailgift" >
+                    <label  class="st-usernamegiftlabel-focused" for="emailgift">Введите емайл</label>
+                    <p class="st-usernamegift-error-msg">упс..вы что то забыли</p>
                 </div>
                 <div class="filled-gift">
 
-                    <select name="selectgift" id="selectgift" size="1">
-                        <option selected></option>
+                    <select class="st-usernamegift-error st-usernamegift-focused" name="selectgift" id="selectgift" size="1">
+                        <option selected disabled></option>
                         <option value="Автограф Клуни">Автограф Клуни</option>
                         <option value="Поездка в Голливуд">Поездка в Голливуд</option>
                         <option value="Машина">Машина</option>
@@ -739,7 +744,8 @@
                         <option value="Красивая ручка">Красивая ручка</option>
                         <option value="Спасибо от Грефа">Спасибо от Грефа</option>
                     </select>
-                    <label for="selectgift">Выберите подарок</label>
+                    <label class="st-usernamegiftlabel-focused" for="selectgift">Выберите подарок</label>
+                    <p class="st-usernamegift-error-msg">упс..вы что то забыли</p>
                 </div>
                 <div class="modal__argeementform">
                     <input id="agreementforgift" class="visuallyhidden" type="checkbox" required>

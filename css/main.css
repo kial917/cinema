@@ -61,6 +61,11 @@ main, body {
     z-index: 1;
 }
 
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+    color: #A1A1A1;
+}
+
 /* Header */
 
 .nav__menu {
@@ -943,10 +948,9 @@ ul.block06__list li div h4 {
     text-align: left
 }
 
-input#username {
+.block08__container input {
     margin: 20px auto 0 20px;
     width: 344px;
-    background: #DEDEDE;
     border: 1px solid transparent;
     height: 40px;
     color: #A1A1A1;
@@ -968,14 +972,14 @@ input#username {
 
 label[for="username"] {
     left: 36px;
-    top: 36px;
+    top: 34px;
     color: #A1A1A1;
 }
 
 label[for="seatnumber"] {
     color: #A1A1A1;
-    left: 40px;
-    top: 46px;
+    left: 36px;
+    top: 44px;
 }
 
 label[for="feedback-area"] {
@@ -984,19 +988,20 @@ label[for="feedback-area"] {
     top: 44px;
 }
 
-input#username:hover ~label[for="username"],
-select#seatnumber:hover ~label[for="seatnumber"],
-textarea#feedback-area:hover ~label[for="feedback-area"] {
+input#username:hover~label[for="username"], select#seatnumber:hover~label[for="seatnumber"], textarea#feedback-area:hover~label[for="feedback-area"] {
+    transform: translateY(-28px);
+    background: #FFFFFF;
+    transition: 0.1s;
+}
+
+label.st-usernamelabel-focused {
     transform: translateY(-28px);
     background: #FFFFFF;
     transition: 0.1s;
 
 }
 
-input#username:hover,
-select#seatnumber:hover,
-textarea#feedback-area:hover
-{
+input#username:hover, select#seatnumber:hover, textarea#feedback-area:hover {
     background: #FFFFFF;
     border: 1px solid #C4C4C4;
     border-radius: 5px;
@@ -1004,18 +1009,34 @@ textarea#feedback-area:hover
     transition: 0.1s;
 }
 
-input#username::-webkit-input-placeholder {
+input.st-username-focused, select.st-username-focused, textarea.st-username-focused {
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    border-radius: 5px;
+    box-shadow: 0 0 0 5px rgba(170, 243, 77, 0.52);
+    transition: 0.1s;
     color: #A1A1A1;
 }
 
-input#username::-moz-placeholder {
+.st-username-error {
+    box-shadow: 0 0 0 5px rgba(255, 0, 0, 0.52);
+}
+
+.st-username-error-msg {
+    visibility: visible;
+}
+
+.block08__container input::-webkit-input-placeholder {
     color: #A1A1A1;
 }
 
-select#seatnumber {
+.block08__container input::-moz-placeholder {
+    color: #A1A1A1;
+}
+
+.block08__container select {
     margin: 31px auto 0 20px;
     width: 344px;
-    background: #DEDEDE;
     border: none;
     height: 40px;
     color: #A1A1A1;
@@ -1027,11 +1048,14 @@ select#seatnumber {
     padding-right: 15px;
 }
 
-textarea#feedback-area {
+textarea {
+    background: #DEDEDE;
+}
+
+.block08__container textarea {
     margin: 30px auto 0 20px;
     width: 344px;
     height: 130px;
-    background: #DEDEDE;
     border: none;
     color: #A1A1A1;
     font-size: 15px;
@@ -1042,11 +1066,11 @@ textarea#feedback-area {
     padding-right: 15px;
 }
 
-textarea#feedback-area::-webkit-input-placeholder {
+.block08__container textarea::-webkit-input-placeholder {
     color: #A1A1A1;
 }
 
-textarea#feedback-area::-moz-placeholder {
+.block08__container textarea::-moz-placeholder {
     color: #A1A1A1;
 }
 
@@ -1202,16 +1226,18 @@ footer {
     z-index: -1;
     transition: all 0.3s cubic-bezier(0.4, 0, 1, 1);
 } */
-.footer__iconcontainer{
-width: 31px;
-height: 31px;
-box-sizing: border-box;
-border-radius: 100%;
-background: rgba(190, 233, 86, 1);
-transition: all 0.3s cubic-bezier(0.4, 0, 1, 1);
-position: relative;
+
+.footer__iconcontainer {
+    width: 31px;
+    height: 31px;
+    box-sizing: border-box;
+    border-radius: 100%;
+    background: rgba(190, 233, 86, 1);
+    transition: all 0.3s cubic-bezier(0.4, 0, 1, 1);
+    position: relative;
 }
-.footer__iconcontainer svg{
+
+.footer__iconcontainer svg {
     margin: 0 auto;
     position: absolute;
     left: 0;
@@ -1219,7 +1245,7 @@ position: relative;
     top: 30%
 }
 
-.footer__iconcontainer:hover{
+.footer__iconcontainer:hover {
     box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
     background: rgb(243, 241, 241);
     transition: all 0.2s cubic-bezier(0.4, 0, 1, 1);
@@ -1376,7 +1402,7 @@ position: relative;
     background: url('../images/bg-feedbacksection.png') no-repeat center / cover;
 }
 
-.footer__icons svg :hover  {
+.footer__icons svg :hover {
     fill: #A3CC40;
     transition: all .8s ease;
 }

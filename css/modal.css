@@ -1,3 +1,5 @@
+
+
 .popup {
     position: fixed;
     bottom: 0;
@@ -27,6 +29,7 @@
     height: 35px;
     background: transparent;
     background-image: url(/images/btn-close.svg);
+    z-index: 1;
 }
 
 .close:hover {
@@ -56,32 +59,38 @@
     position: absolute;
     transition: 0.1s;
     white-space: nowrap;
-    }
+}
 
 label[for="usernamegift"] {
     left: 36px;
-    top: 36px;
+    top: 34px;
     color: #A1A1A1;
 }
+
 label[for="emailgift"] {
     color: #A1A1A1;
     left: 36px;
-    top: 34px;
+    top: 32px;
 }
+
 label[for="selectgift"] {
     color: #A1A1A1;
-    left: 40px;
-    top: 34px;
+    left: 36px;
+    top: 32px;
 }
-input#usernamegift, 
-input#emailgift,
-select#selectgift {
+
+input, select{
+    background: #DEDEDE;
+    color: #A1A1A1;
+}
+
+.modal__inputwrapper input, .modal__inputwrapper input, .modal__inputwrapper select {
     margin: 20px auto 0 20px;
     width: 500px;
-    background: #DEDEDE;
+    
     border: none;
     height: 40px;
-    color: #A1A1A1;
+    
     font-size: 15px;
     line-height: 1.26em;
     padding-left: 16px;
@@ -89,19 +98,28 @@ select#selectgift {
     border-radius: 5px;
 }
 
-input#usernamegift:hover ~label[for="usernamegift"],
-input#emailgift:hover ~label[for="emailgift"],
-select#selectgift:hover ~label[for="selectgift"] {
+#usernamegift:hover~label[for="usernamegift"], #emailgift:hover~label[for="emailgift"], #selectgift:hover~label[for="selectgift"] {
     transform: translateY(-26px);
     background: #FFFFFF;
     transition: 0.1s;
-
+    padding: 3px;
+}
+label.st-usernamegiftlabel-focused{
+    transform: translateY(-26px);
+    background: #FFFFFF;
+    transition: 0.1s;
+    
 }
 
-input#usernamegift:hover,
-input#emailgift:hover,
-select#selectgift:hover
-{
+
+input#usernamegift:hover, input#emailgift:hover, select#selectgift:hover {
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    border-radius: 5px;
+    box-shadow: 0 0 0 5px rgba(170, 243, 77, 0.52);
+    transition: 0.1s;
+}
+input#usernamegift:hover, input#emailgift:hover, select#selectgift:hover {
     background: #FFFFFF;
     border: 1px solid #C4C4C4;
     border-radius: 5px;
@@ -109,14 +127,48 @@ select#selectgift:hover
     transition: 0.1s;
 }
 
+/* input#usernamegift:focus~label[for="usernamegift"] {
+    transform: translateY(-26px);
+    background: #FFFFFF;
+    transition: 0.1s;
+} */
+
+/* input#usernamegift:focus */
+
+.st-usernamegift-focused {
+    background: #FFFFFF;
+    border: 1px solid #C4C4C4;
+    border-radius: 5px;
+    box-shadow: 0 0 0 5px rgba(170, 243, 77, 0.52);
+    transition: 0.1s;
+}
+
+.st-usernamegift-error {
+    box-shadow: 0 0 0 5px rgba(255, 0, 0, 0.52);
+    
+}
+
+form label~p {
+    color: red;
+    font-size: 12px;
+    position: relative;
+    top: -12px;
+    left: 36px;
+    visibility: hidden;
+}
+
+.st-usernamegift-error-msg {
+    visibility:visible;
+    
+}
+
 input#usernamegift::-webkit-input-placeholder, input#emailgift::-webkit-input-placeholder {
-    color: #A1A1A1;
+    color: #ffffff;
 }
 
 input#usernamegift::-moz-placeholder, input#emailgift::-moz-placeholder {
-    color: #A1A1A1;
+    color: #ffffff;
 }
-
 
 input#agreementforgift+label {
     font-family: IBM Plex Sans;
@@ -164,7 +216,17 @@ input[type="checkbox"]#agreementforgift:checked+label::before {
     align-items: center;
     text-align: center;
     color: #FFFFFF;
+    transition: all 0.3s cubic-bezier(0.4, 0, 1, 1);
 }
+.modal__argeementbtn:hover{
+    background: #FFFFFF;
+    border: 1px solid rgba(163, 204, 64, 0.62);
+    box-sizing: border-box;
+    box-shadow: 0px 2px 9px rgb(144 210 61 / 30%);
+    color: #A3CC40;
+    transition: all 0.3s cubic-bezier(0.4, 0, 1, 1);
+    letter-spacing: 3px;
+    font-size: 24px;
+}
+
 /* Стилизация полей при наведении и модификаторах */
-
-

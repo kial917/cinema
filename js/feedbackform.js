@@ -4,36 +4,82 @@ const textareaField = document.querySelector('.block08__form textarea[name="feed
 
 const inputFeedbackForm = document.querySelector('.block08__form');
 
+const ERRORFEEDBACK_CLASS_NAME = 'st-username-error';
+const FOCUSEDFEEDBACK_CLASS_NAME = "st-username-focused";
+const FOCUSEDLABELFEEDBACK_CLASS_NAME = "st-usernamelabel-focused";
+const ERRORMSGFEEDBACK_CLASS_NAME = "st-username-error-msg";
 
-function initializeFormField(field) {
-    const input = field.getElementsByTagName('input')[0];
-    const select = field.getElementsByTagName('select')[0];
-    const textarea = field.getElementsByTagName('textarea')[0];
+function initializeFormField(field,formElem) {
+    const input = field.getElementsByTagName(formElem)[0];
+    const label = field.getElementsByTagName('label')[0];
+    const error = field.getElementsByTagName('p')[0];
+    input.value = "";
 
+    label.classList.remove(FOCUSEDLABELFEEDBACK_CLASS_NAME);
+    input.classList.remove(ERRORFEEDBACK_CLASS_NAME);
+    input.classList.remove(FOCUSEDFEEDBACK_CLASS_NAME);
+    error.classList.remove(ERRORMSGFEEDBACK_CLASS_NAME);
+
+
+
+    input.onfocus = () => {
+        input.classList.add(FOCUSEDFEEDBACK_CLASS_NAME);
+        label.classList.add(FOCUSEDLABELFEEDBACK_CLASS_NAME);
+        error.classList.remove(ERRORMSGFEEDBACK_CLASS_NAME);
+        input.classList.remove(ERRORFEEDBACK_CLASS_NAME);
+
+    };
+    input.onblur = () => {
+        if (!input.value) {
+            input.classList.remove(FOCUSEDFEEDBACK_CLASS_NAME);
+            label.classList.remove(FOCUSEDLABELFEEDBACK_CLASS_NAME);
+            // input.classList.add(ERRORFEEDBACK_CLASS_NAME);
+            // error.classList.add(ERRORMSGFEEDBACK_CLASS_NAME);
+        }
+    };
     return {
-        getInputValue() {
+        getValue() {
             return input.value;
         },
-        getSelectValue() {
-            return select.value;
+        getAutofocus() {
+            input.focus();
         },
-        getTextareaValue() {
-            return textarea.value;
-        },
+        addError(errorText){
+            input.classList.add(ERRORFEEDBACK_CLASS_NAME);
+            error.classList.add(ERRORMSGFEEDBACK_CLASS_NAME);
+            error.innerHTML=errorText;
+        }
 
-    }
-};
+    };
+}
 
-const nameFeedbackFieldUtils = initializeFormField(nameFeedbackField);
-const seatSelectFieldUtils = initializeFormField(seatSelectField);
-const textareaFieldUtils = initializeFormField(textareaField);
+const nameFeedbackFieldUtils = initializeFormField(nameFeedbackField,'input');
+const seatSelectFieldUtils = initializeFormField(seatSelectField,'select');
+const textareaFieldUtils = initializeFormField(textareaField,'textarea');
 
 const HadleFeedbackSubmit = (event) => {
     event.preventDefault();
+    const nameValue=nameFeedbackFieldUtils.getValue();
+    const seatValue=seatSelectFieldUtils.getValue();
+    const textareaValue = textareaFieldUtils.getValue();
+
+    
+    if(!nameValue){
+        nameFeedbackFieldUtils.addError('ну напиши ты свое имя!');
+        return;
+    }
+    if(!seatValue){
+        seatSelectFieldUtils.addError('давай вспоминай где сидел');
+        return;
+    }
+    if(!textareaValue){
+        textareaFieldUtils.addError('хоть скобочку то напиши');
+        return;
+    }
     const data = {
-        name: nameFeedbackFieldUtils.getInputValue(),
-        seat: seatSelectFieldUtils.getSelectValue(),
-        text: textareaFieldUtils.getTextareaValue(),
+        name: nameValue,
+        seat: seatValue,
+        text: textareaValue,
     }
 
     const url = new URL('http://inno-ijl.ru/multystub/stc-21-03/feedback');
@@ -41,6 +87,7 @@ const HadleFeedbackSubmit = (event) => {
 
 
     fetch(url.toString());
+    
 };
 
 inputFeedbackForm.addEventListener('submit', HadleFeedbackSubmit)
