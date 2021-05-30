@@ -1,6 +1,7 @@
 const nameFeedbackField = document.querySelector('.block08__form input[name="username"]').parentNode;
 const seatSelectField = document.querySelector('.block08__form select[name="seatnumber"]').parentNode;
 const textareaField = document.querySelector('.block08__form textarea[name="feedback-area"]').parentNode;
+const btnField = document.querySelector('.block08__argeementbtn');
 
 const inputFeedbackForm = document.querySelector('.block08__form');
 
@@ -87,7 +88,10 @@ const HadleFeedbackSubmit = (event) => {
 
 
     fetch(url.toString());
-    
+    btnField.innerHTML='Отлично! Запрос направлен!'
+    setTimeout(() => {
+        btnField.innerHTML='послать'
+    }, 3000);
 };
 
 inputFeedbackForm.addEventListener('submit', HadleFeedbackSubmit)

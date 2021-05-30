@@ -82,13 +82,14 @@ label[for="selectgift"] {
 input, select{
     background: #DEDEDE;
     color: #A1A1A1;
+    border: none;
 }
 
 .modal__inputwrapper input, .modal__inputwrapper input, .modal__inputwrapper select {
     margin: 20px auto 0 20px;
     width: 500px;
     
-    border: none;
+    
     height: 40px;
     
     font-size: 15px;
