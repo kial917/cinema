@@ -10,7 +10,7 @@ const FOCUSEDFEEDBACK_CLASS_NAME = "st-username-focused";
 const FOCUSEDLABELFEEDBACK_CLASS_NAME = "st-usernamelabel-focused";
 const ERRORMSGFEEDBACK_CLASS_NAME = "st-username-error-msg";
 
-function initializeFormField(field,formElem) {
+function initializeFormField(field, formElem) {
     const input = field.getElementsByTagName(formElem)[0];
     const label = field.getElementsByTagName('label')[0];
     const error = field.getElementsByTagName('p')[0];
@@ -45,35 +45,35 @@ function initializeFormField(field,formElem) {
         getAutofocus() {
             input.focus();
         },
-        addError(errorText){
+        addError(errorText) {
             input.classList.add(ERRORFEEDBACK_CLASS_NAME);
             error.classList.add(ERRORMSGFEEDBACK_CLASS_NAME);
-            error.innerHTML=errorText;
+            error.innerHTML = errorText;
         }
 
     };
 }
 
-const nameFeedbackFieldUtils = initializeFormField(nameFeedbackField,'input');
-const seatSelectFieldUtils = initializeFormField(seatSelectField,'select');
-const textareaFieldUtils = initializeFormField(textareaField,'textarea');
+const nameFeedbackFieldUtils = initializeFormField(nameFeedbackField, 'input');
+const seatSelectFieldUtils = initializeFormField(seatSelectField, 'select');
+const textareaFieldUtils = initializeFormField(textareaField, 'textarea');
 
 const HadleFeedbackSubmit = (event) => {
     event.preventDefault();
-    const nameValue=nameFeedbackFieldUtils.getValue();
-    const seatValue=seatSelectFieldUtils.getValue();
+    const nameValue = nameFeedbackFieldUtils.getValue();
+    const seatValue = seatSelectFieldUtils.getValue();
     const textareaValue = textareaFieldUtils.getValue();
 
-    
-    if(!nameValue){
+
+    if (!nameValue) {
         nameFeedbackFieldUtils.addError('ну напиши ты свое имя!');
         return;
     }
-    if(!seatValue){
+    if (!seatValue) {
         seatSelectFieldUtils.addError('давай вспоминай где сидел');
         return;
     }
-    if(!textareaValue){
+    if (!textareaValue) {
         textareaFieldUtils.addError('хоть скобочку то напиши');
         return;
     }
@@ -87,11 +87,20 @@ const HadleFeedbackSubmit = (event) => {
     url.search = new URLSearchParams(data).toString();
 
 
-    fetch(url.toString());
-    btnField.innerHTML='Отлично! Запрос направлен!'
-    setTimeout(() => {
-        btnField.innerHTML='послать'
-    }, 3000);
-};
+
+
+    let response = async () => {
+        btnField.innerHTML = 'Отлично! Запрос направлен!';
+        let resp = await fetch(url.toString());
+        (resp.status === 200) ? btnField.innerHTML = 'Ответ получен!': btnField.innerHTML = 'Что то пошло не так';
+        setTimeout(() => {
+            btnField.innerHTML = 'послать'
+        }, 2000);
+    }
+    response();
+}
+
+
+
 
 inputFeedbackForm.addEventListener('submit', HadleFeedbackSubmit)
