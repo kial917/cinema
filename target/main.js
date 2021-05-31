@@ -7,8 +7,8 @@ $(document).ready(function () {
     dots: false,
     items: 3,
     margin: 0,
-    // autoplay: true,
-    autoplayHoverPause: true,
-    center: true
+    center: true,
+    stagePadding: 0,
+    merge: true
   });
 });
