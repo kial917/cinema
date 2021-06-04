@@ -1,7 +1,7 @@
 class Film {
     constructor(filmData) {
         this.data = filmData;
-        this.start = `${toHours(GetRandomToMax(14)+9)}:${toMinutes(GetRandomToMax(5))}`;
+        this.start = `${toHours(getRandomToMax(13)+9)}:${toMinutes(getRandomToMax(5))}`;
         this.id=filmData.id;
     }
     isNotForAdult() {

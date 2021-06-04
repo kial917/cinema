@@ -1,6 +1,6 @@
 "use strict";
 
-function GetRandomToMax(max) {
+function getRandomToMax(max) {
   return Math.ceil(Math.random() * (max + 1)) - 1;
 }
 

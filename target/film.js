@@ -11,7 +11,7 @@ var Film = /*#__PURE__*/function () {
     _classCallCheck(this, Film);
 
     this.data = filmData;
-    this.start = "".concat(toHours(GetRandomToMax(14) + 9), ":").concat(toMinutes(GetRandomToMax(5)));
+    this.start = "".concat(toHours(getRandomToMax(13) + 9), ":").concat(toMinutes(getRandomToMax(5)));
     this.id = filmData.id;
   }
 

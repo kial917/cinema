@@ -34,7 +34,8 @@ function initializeFormField(field, formElem) {
   input.onblur = function () {
     if (!input.value) {
       input.classList.remove(FOCUSEDFEEDBACK_CLASS_NAME);
-      label.classList.remove(FOCUSEDLABELFEEDBACK_CLASS_NAME); 
+      label.classList.remove(FOCUSEDLABELFEEDBACK_CLASS_NAME); // input.classList.add(ERRORFEEDBACK_CLASS_NAME);
+      // error.classList.add(ERRORMSGFEEDBACK_CLASS_NAME);
     }
   };
 
