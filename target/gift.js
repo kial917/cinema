@@ -47,6 +47,7 @@ function initializeField(field, formElem) {
       // error.classList.add(ERRORMSG_CLASS_NAME);
     }
   };
+ 
 
   return {
     getValue: function getValue() {

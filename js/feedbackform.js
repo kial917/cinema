@@ -38,6 +38,10 @@ function initializeFormField(field, formElem) {
             // error.classList.add(ERRORMSGFEEDBACK_CLASS_NAME);
         }
     };
+    function reset(){
+        input.value='';
+      }
+    reset();
     return {
         getValue() {
             return input.value;
@@ -96,6 +100,10 @@ const HadleFeedbackSubmit = (event) => {
         setTimeout(() => {
             btnField.innerHTML = 'послать'
         }, 2000);
+        initializeFormField(nameFeedbackField, 'input').reset;
+        initializeFormField(seatSelectField, 'select').reset;
+        initializeFormField(textareaField, 'textarea').reset;
+
     }
     response();
 }

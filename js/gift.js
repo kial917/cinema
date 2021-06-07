@@ -47,6 +47,10 @@ function initializeField(field, formElem) {
             // error.classList.add(ERRORMSG_CLASS_NAME);
         }
     };
+    function reset(){
+        input.value='';
+      }
+    reset();
     return {
         getValue() {
             return input.value;
@@ -99,6 +103,11 @@ const HadleSubmit = (event) => {
         let resp = await fetch(url.toString());
         if (resp.status === 200) {
             popupToggle();
+            initializeField(nameField, 'input').reset;
+            initializeField(emailField, 'input').reset;
+            initializeField(giftSelectField, 'select').reset;
+            
+
         } else alert("Статус посылки =" + resp.status)
         }
     response();
