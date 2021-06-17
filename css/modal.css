@@ -44,7 +44,7 @@
 
 .modal__inputwrapper {
     padding-top: 90px;
-    padding-left: 20px;
+    padding-left: 3.33%;
     position: relative;
 }
 
@@ -53,7 +53,7 @@
 }
 
 .modal__inputwrapper label {
-    font-size: 15px;
+    font-size: 1rem;
     line-height: 1.26em;
     background: transparent;
     position: absolute;
@@ -86,15 +86,15 @@ input, select{
 }
 
 .modal__inputwrapper input, .modal__inputwrapper input, .modal__inputwrapper select {
-    margin: 20px auto 0 20px;
+    margin: 20px auto 0 3.45%;
     width: 500px;
     
     
     height: 40px;
     
-    font-size: 15px;
+    font-size: 1rem;
     line-height: 1.26em;
-    padding-left: 16px;
+    padding-left: 2.76%;
     padding-top: 10px;
     border-radius: 5px;
 }
@@ -151,7 +151,7 @@ input#usernamegift:hover, input#emailgift:hover, select#selectgift:hover {
 
 form label~p {
     color: red;
-    font-size: 12px;
+    font-size: 0.75rem;
     position: relative;
     top: -12px;
     left: 36px;
@@ -175,8 +175,8 @@ input#agreementforgift+label {
     font-family: IBM Plex Sans;
     font-style: normal;
     font-weight: normal;
-    font-size: 10px;
-    line-height: 13px;
+    font-size: .625rem;
+    line-height: .875rem;
     /* identical to box height */
     color: #333333;
     position: relative;
@@ -200,12 +200,12 @@ input[type="checkbox"]#agreementforgift:checked+label::before {
 
 .modal__argeementform {
     margin-top: 29px;
-    margin-left: 20px;
+    margin-left: 3.33%;
 }
 
 .modal__argeementbtn {
     margin-top: 42px;
-    margin-left: 20px;
+    margin-left: 3.33%;
     border: none;
     width: 500px;
     background: #A3CC40;
@@ -226,8 +226,8 @@ input[type="checkbox"]#agreementforgift:checked+label::before {
     box-shadow: 0px 2px 9px rgb(144 210 61 / 30%);
     color: #A3CC40;
     transition: all 0.3s cubic-bezier(0.4, 0, 1, 1);
-    letter-spacing: 3px;
-    font-size: 24px;
+    letter-spacing: .188rem;
+    font-size: 1.5rem;
 }
 
 /* Стилизация полей при наведении и модификаторах */
