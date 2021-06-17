@@ -85,6 +85,11 @@ const HadleSubmit = (event) => {
         emailFieldUtils.addError('мыло, нужно мыло. куда слать то письмо?');
         return;
     }
+    if (!/^[\w-]{1,16}@[\w-]{3,6}\.[a-z]{2,3}$/i.test(emailValue)) {
+        emailFieldUtils.addError('напиши нормально по формату');
+        return;
+    }
+
     if (!selectValue) {
         selectgiftFieldUtils.addError('мой совет...выбери автограф от Клуни');
         return;

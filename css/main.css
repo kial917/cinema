@@ -37,6 +37,7 @@
 
 html {
     font-family: IBM Plex Sans;
+    font-size: 1.47vw;
     max-width: 1124px;
     min-width: 550px;
     box-sizing: border-box;
@@ -85,8 +86,8 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 
 .row1, .row2 {
     font-weight: 500;
-    font-size: 12px;
-    line-height: 16px;
+    font-size: 0.75rem;
+    line-height: 1.58em;;
     /* identical to box height */
     color: #FFFFFF;
     text-align: left;
@@ -114,11 +115,11 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
 
 .row2 li {
-    margin-right: 55px;
+    margin-right: 6.38%;
 }
 
 .row2 li:first-child {
-    margin-left: 30px;
+    margin-left: 4%;
 }
 
 .row1 {
@@ -127,8 +128,8 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 
 .lang__sel {
     font-weight: 500;
-    font-size: 12px;
-    line-height: 16px;
+    font-size: 0.75rem;
+    line-height: 1.33em;
     /* identical to box height */
     color: #FFFFFF;
     text-align: left;
@@ -149,8 +150,8 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 .row1>p, .row1>button {
     white-space: nowrap;
     margin-top: 0px;
-    margin-left: 31px;
-    margin-right: 24px;
+    margin-left: 4.16%;
+    margin-right: 3.22%;
 }
 
 .link__underline {
@@ -179,8 +180,6 @@ button.callback:hover {
 }
 
 .callback {
-    /* width: 130px;
-    height: 21px; */
     font-family: inherit;
     border-radius: 6px;
     background: #FFF;
@@ -188,12 +187,12 @@ button.callback:hover {
     border: none;
     font-style: normal;
     font-weight: 500;
-    font-size: 12px;
-    line-height: 18px;
+    font-size: 0.75rem;
+    line-height: 1.5rem;
     text-align: left;
     height: fit-content;
     margin: auto 4px;
-    padding-right: 12px;
+    padding-right: 1em;
 }
 
 .callback svg {
@@ -208,8 +207,8 @@ a {
 header div h1 {
     font-style: normal;
     font-weight: 100;
-    font-size: 68px;
-    line-height: 88px;
+    font-size: 4.25rem;
+    line-height: 1.29em;
     text-align: center;
     color: #FFFFFF;
     margin: 131px auto 0;
@@ -218,8 +217,8 @@ header div h1 {
 header div h2 {
     font-style: normal;
     font-weight: normal;
-    font-size: 41px;
-    line-height: 53px;
+    font-size: 2.5625rem;
+    line-height: 1.28em;
     text-align: center;
     color: #FFFFFF;
     margin: 20px auto 0;
@@ -229,11 +228,13 @@ header div h2 {
 .nav__titles:after {
     content: '';
     display: block;
-    border-top: 130px solid transparent;
-    border-right: 99vw solid #fff;
+    border-top: 132px solid transparent;
+    border-right: 97vw solid #fff;
     position: absolute;
     bottom: 0px;
-    right: 0
+    right: 0;
+    
+
 }
 
 /* Блок Почему мы? Block00 Block01 */
@@ -259,23 +260,23 @@ header div h2 {
 .block00 h3 {
     font-style: normal;
     font-weight: 600;
-    font-size: 33px;
-    line-height: 43px;
+    font-size: 2rem;
+    line-height: 1.3em;
     /* identical to box height */
     color: #333333;
     padding: 30px 0 0;
-    margin: 0 auto 23px 49px;
+    margin: 0 auto 23px 11.5%;
     text-align: left;
 }
 
 .block00 p {
     font-style: normal;
     font-weight: normal;
-    font-size: 11px;
-    line-height: 14px;
+    font-size: .75rem;
+    line-height: 1.27em;
     color: #333333;
     text-align: justify;
-    margin: 0 47px 12px;
+    margin: 0 11.5% 12px;
     max-width: 315px;
     text-align: left;
 }
@@ -283,12 +284,13 @@ header div h2 {
 section h3 {
     font-style: normal;
     font-weight: 600;
-    font-size: 48px;
-    line-height: 62px;
+    font-size: 3rem;
+    line-height: 1.3em;
     color: #A3CC40;
     margin-left: 12%;
     z-index: 5;
 }
+/* _______здесь */
 
 .block01__advant {
     display: flex;
@@ -309,8 +311,8 @@ section h3 {
 .block01__advant h4 {
     font-style: normal;
     font-weight: 600;
-    font-size: 20px;
-    line-height: 26px;
+    font-size: 1.25rem;
+    line-height: 1.625rem;
     /* identical to box height */
     text-align: center;
     color: #333333;
@@ -320,8 +322,8 @@ section h3 {
 .block01__advant p {
     font-style: normal;
     font-weight: normal;
-    font-size: 11px;
-    line-height: 14px;
+    font-size: 0.75rem;
+    line-height: 0.875rem;
     text-align: center;
     color: #333333;
     margin: 25px auto 0;
@@ -349,8 +351,8 @@ form {
 td, th {
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 0.875rem;
+    line-height: 1.125rem;
     text-align: left;
     padding: 14px 0px;
 }
@@ -369,13 +371,13 @@ table {
     background: #A3CC40;
     font-style: normal;
     font-weight: 600;
-    font-size: 20px;
-    line-height: 1.3;
+    font-size: 1.25rem;
+    line-height: 1.3rem;
     padding: 10px 0px;
 }
 
 .block03__table th.block03__table__thirdcol>:first-child {
-    margin-right: 10px;
+    margin-right: 1.2%;
 }
 
 .block03__table tr td {
@@ -387,36 +389,27 @@ table {
 }
 
 .block03__table .block03__table__firstcol {
-    width: 81px;
+    width: 9.7%;
     text-align: left;
-    padding-left: 25px
+    padding-left: 3%;
 }
 
 .block03__table .block03__table__secondcol {
-    width: 235px;
+    width: 27.65%;
 }
 
 .block03__table__thirdcol {
-    width: 242px;
+    width: 28.47%;
 }
-
-/* #block03__table__fourcol {
-    width: 272px;
-} */
-
-/* .block03__title {
-    width: 849px;
-    margin: 0px auto 84px;
-} */
 
 .block03__parag {
     font-style: normal;
     font-weight: normal;
-    font-size: 11px;
+    font-size: .75rem;
     line-height: 1.5;
     text-align: center;
     color: #333333;
-    width: 539px;
+    width: 47.91%;
     margin: 28px auto 0px;
     padding: 0px 10px 40px;
     vertical-align: top;
@@ -441,6 +434,7 @@ table {
     left: 0;
     top: 0;
     z-index: 0;
+    overflow: hidden;
 }
 
 .block04::after {
@@ -448,8 +442,6 @@ table {
     display: block;
     border-top: 100px solid transparent;
     border-right: 97vw solid #fff;
-    /* border-left: 97vw solid #fff;
-    border-bottom: 100px solid transparent; */
     position: absolute;
     right: 0;
     bottom: 0;
@@ -491,16 +483,16 @@ table {
 
 .block04__rightside h3 {
     font-weight: 600;
-    font-size: 48px;
-    line-height: 62px;
+    font-size: 3rem;
+    line-height: 3.875rem;
     color: white;
     margin-bottom: 38px;
 }
 
 .block04__rightside p {
     font-weight: 100;
-    font-size: 11px;
-    line-height: 14px;
+    font-size: .75rem;
+    line-height: .875rem;
     color: white;
     margin-bottom: 18px;
 }
@@ -515,8 +507,8 @@ table {
     width: 190px;
     height: 31px;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: .875rem;
+    line-height: 1.125rem;
     color: white;
     white-space: nowrap;
     text-align: center;
@@ -529,7 +521,7 @@ form button {
     width: 344px;
     background: #A3CC40;
     border-radius: 6px;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-style: normal;
     font-weight: 500;
     align-items: center;
@@ -555,11 +547,11 @@ form button {
 
 .block05 p {
     margin-top: 27px;
-    max-width: 548px;
+    max-width: 34.25rem;
     font-style: normal;
     font-weight: normal;
-    font-size: 11px;
-    line-height: 14px;
+    font-size: 0.75rem;
+    line-height: .875rem;
     color: #333333;
     margin-left: 12.5%;
 }
@@ -578,9 +570,6 @@ form button {
 }
 
 .movieSelect {
-    /* background-color: white;
-    background-repeat: no-repeat;
-    background-size: cover; */
     width: 283px;
     height: 283px;
     background: white no-repeat center / cover;
@@ -626,22 +615,22 @@ form button {
 li.movieSelect h4 {
     font-style: normal;
     font-weight: 600;
-    font-size: 29px;
-    line-height: 38px;
+    font-size: 1.875rem;
+    line-height: 2.375rem;
     /* identical to box height */
     color: #FFFFFF;
     z-index: 4;
     width: 239px;
     text-align: left;
-    margin: 17px auto 0;
+    margin: 18px auto 0;
     visibility: hidden;
 }
 
 li.movieSelect p {
     font-style: normal;
     font-weight: 400;
-    font-size: 11px;
-    line-height: 14.2px;
+    font-size: 0.75rem;
+    line-height: .875rem;
     /* identical to box height */
     color: #FFFFFF;
     margin: 13px auto auto;
@@ -660,8 +649,8 @@ li.movieSelect p {
     max-width: 548px;
     font-style: normal;
     font-weight: normal;
-    font-size: 11px;
-    line-height: 14px;
+    font-size:0.75rem;
+    line-height: .875rem;
     color: #333333;
     margin-left: 12.5%;
 }
@@ -703,8 +692,6 @@ li.goodsSelect::after {
     position: absolute;
     border-top: 153px solid rgba(163, 204, 64, 0.8);
     border-right: 245px solid rgba(163, 204, 64, 0.8);
-    /* border-left: 245px solid rgba(163, 204, 64, 0.8);
-    border-bottom: 153px solid rgba(163, 204, 64, 0.8); */
     transform: rotate(-15deg) scaleX(3);
     transform-origin: right top;
     left: 0;
@@ -715,8 +702,8 @@ li.goodsSelect::after {
 ul.block06__list li div h4 {
     font-style: normal;
     font-weight: 600;
-    font-size: 20px;
-    line-height: 26px;
+    font-size: 1.25rem;
+    line-height: 1.625rem;
     /* identical to box height */
     text-align: center;
     color: #FFFFFF;
@@ -775,7 +762,7 @@ ul.block06__list li div h4 {
     color: #FFF;
     font-style: normal;
     font-weight: normal;
-    font-size: 11px;
+    font-size: 0.75rem;
     line-height: 1rem;
     margin-top: 23px;
     display: inline-block;
@@ -860,8 +847,8 @@ ul.block06__list li div h4 {
     margin-top: 15px;
     font-style: normal;
     font-weight: 600;
-    font-size: 15px;
-    line-height: 19px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     text-align: left;
 }
 
@@ -870,19 +857,18 @@ ul.block06__list li div h4 {
     text-align: left;
     font-style: normal;
     font-weight: normal;
-    font-size: 11px;
-    line-height: 14px;
+    font-size:0.75rem;
+    line-height: 0.875rem;
     color: #FFF;
-    margin-top: 14px;
-}
+    }
 
 .block07__list div p:last-child {
     margin-top: 22px auto;
     text-align: right;
     font-style: normal;
     font-weight: 300;
-    font-size: 9px;
-    line-height: 12px;
+    font-size: .625rem;
+    line-height: .75rem;
 }
 
 /* Блок с обратной связью*/
@@ -941,8 +927,8 @@ ul.block06__list li div h4 {
     font-family: IBM Plex Sans;
     font-style: normal;
     font-weight: 500;
-    font-size: 25px;
-    line-height: 32px;
+    font-size: 1.5rem;
+    line-height: 2rem;
     color: #A3CC40;
     width: 344px;
     margin: 31px auto 0 88px;
@@ -950,21 +936,21 @@ ul.block06__list li div h4 {
 }
 
 .block08__container input {
-    margin: 20px auto 0 20px;
+    margin: 20px auto 0 5.81%;
     width: 344px;
     border: 1px solid transparent;
     height: 40px;
     color: #A1A1A1;
-    font-size: 15px;
+    font-size: 1rem;
     line-height: 1.26em;
-    padding-left: 16px;
+    padding-left: 4.65%;
     padding-top: 12px;
     border-radius: 5px;
     transition: 0.1s;
 }
 
 .block08__form label {
-    font-size: 15px;
+    font-size: 1rem;
     line-height: 1.26em;
     background: transparent;
     position: absolute;
@@ -1036,14 +1022,14 @@ input.st-username-focused, select.st-username-focused, textarea.st-username-focu
 }
 
 .block08__container select {
-    margin: 31px auto 0 20px;
+    margin: 31px auto 0 5.81%;
     width: 344px;
     /* border: none; */
     height: 40px;
     color: #A1A1A1;
-    font-size: 15px;
-    line-height: 19px;
-    padding-left: 16px;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    padding-left: 4.65%;
     padding-top: 8px;
     border-radius: 5px;
     padding-right: 15px;
@@ -1055,17 +1041,17 @@ textarea {
 }
 
 .block08__container textarea {
-    margin: 30px auto 0 20px;
+    margin: 30px auto 0 5.81%;
     width: 344px;
     height: 130px;
     
     color: #A1A1A1;
-    font-size: 15px;
-    line-height: 19px;
-    padding-left: 16px;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    padding-left: 4.65%;
     padding-top: 13px;
     border-radius: 5px;
-    padding-right: 15px;
+    padding-right: 4.65%;
 }
 
 .block08__container textarea::-webkit-input-placeholder {
@@ -1080,19 +1066,19 @@ input#agreement+label {
     font-family: IBM Plex Sans;
     font-style: normal;
     font-weight: normal;
-    font-size: 10px;
-    line-height: 13px;
+    font-size: .625rem;
+    line-height: .875rem;
     /* identical to box height */
     color: #333333;
     position: relative;
-    padding-left: 30px;
+    padding-left: 8.72%;
 }
 
 input#agreement+label::before {
     content: "";
     position: absolute;
     width: 18px;
-    height: 17px;
+    height: 18px;
     margin-right: 0.54rem;
     border: 1px solid #A3CC40;
     border-radius: 5px;
@@ -1105,14 +1091,14 @@ input[type="checkbox"]#agreement:checked+label::before {
 
 .block08__argeementform {
     margin-top: 22px;
-    margin-left: 20px;
+    margin-left: 5.81%;
 }
 
 .block08__argeementbtn {
     padding-top: 2px;
     padding-bottom: 2px;
     margin-top: 46px;
-    margin-left: 18px;
+    margin-left: 5.81%;
     border: none;
     transition: all 0.3s cubic-bezier(0.4, 0, 1, 1);
 }
@@ -1125,7 +1111,7 @@ input[type="checkbox"]#agreement:checked+label::before {
     color: #A3CC40;
     transition: all 0.3s cubic-bezier(0.4, 0, 1, 1);
     letter-spacing: 2px;
-    font-size: 22px;
+    font-size: 1.375rem;
 }
 
 /* Блок с картой*/
@@ -1168,8 +1154,8 @@ footer {
 
 .footer__container::before {
     content: ' ';
-    width: 89px;
-    height: 106px;
+    width: 5.625rem;
+    height: 6.625rem;
     position: absolute;
     left: 0px;
     top: 123px;
@@ -1178,8 +1164,8 @@ footer {
 
 .footer__container::after {
     content: ' ';
-    width: 89px;
-    height: 106px;
+    width: 5.625rem;
+    height: 6.625rem;
     position: absolute;
     right: 0px;
     top: 123px;
@@ -1190,7 +1176,7 @@ footer {
     flex-basis: 47%;
     height: 244px;
     flex-shrink: 3;
-    padding-left: 89px;
+    padding-left: 9.09%;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -1204,8 +1190,8 @@ footer {
     font-family: IBM Plex Sans;
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 0.875rem;
+    line-height: 1.125rem;
 }
 
 .footer__icons {
@@ -1215,14 +1201,14 @@ footer {
     align-content: space-between;
     align-items: center;
     padding-bottom: 24px;
-    width: 285px;
+    width: 59.87%;
 }
 
 
 
 .footer__iconcontainer {
-    width: 31px;
-    height: 31px;
+    width: 2rem;
+    height: 2rem;
     box-sizing: border-box;
     border-radius: 100%;
     background: rgba(190, 233, 86, 1);
@@ -1253,8 +1239,8 @@ footer {
 .footer__firstcolrights {
     font-style: normal;
     font-weight: normal;
-    font-size: 15px;
-    line-height: 19px;
+    font-size: 1rem;
+    line-height: 1.25rem;
 }
 
 .footer__secondcol h4 {
@@ -1262,8 +1248,8 @@ footer {
     font-family: IBM Plex Sans;
     font-style: normal;
     font-weight: bold;
-    font-size: 20px;
-    line-height: 26px;
+    font-size: 1.25rem;
+    line-height: 1.625rem;
 }
 
 .footer__secondcol {
@@ -1274,8 +1260,8 @@ footer {
     font-family: IBM Plex Sans;
     font-style: normal;
     font-weight: 500;
-    font-size: 12px;
-    line-height: 16px;
+    font-size: .75rem;
+    line-height: 1rem;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -1299,8 +1285,8 @@ footer {
     font-family: IBM Plex Sans;
     font-style: normal;
     font-weight: 500;
-    font-size: 12px;
-    line-height: 16px;
+    font-size: .75rem;
+    line-height: 1rem;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -1314,8 +1300,8 @@ footer {
     font-family: IBM Plex Sans;
     font-style: normal;
     font-weight: bold;
-    font-size: 20px;
-    line-height: 26px;
+    font-size: 1.25rem;
+    line-height: 1.625rem;
 }
 
 .footer__thirdcol p:first-of-type {
@@ -1387,9 +1373,6 @@ footer {
     background: url('../images/bg-goods-3.png') no-repeat center / cover;
 }
 
-#logoInno {
-    padding: 20px;
-}
 
 #backPoster {
     background: url('../images/bg-feedbacksection.png') no-repeat center / cover;

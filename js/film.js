@@ -4,31 +4,32 @@ class Film {
         this.start = `${toHours(getRandomToMax(13)+9)}:${toMinutes(getRandomToMax(5))}`;
         this.id=filmData.id;
     }
-    isNotForAdult() {
-        return !this.data.adult;
-    };
-    getId() {
+    
+    #getId() {
         return this.id;
     };
-    getStart() {
+    #getStart() {
         return this.start;
     };
-    getLink() {
+    #getLink() {
         return this.data.link;
     };
-    getTitle() {
+    #getTitle() {
         return this.data.title;
     };
-    getGenre() {
+    #getGenre() {
         return this.data.genre.map(g => g.name).join(', ');
+    };
+    isNotForAdult() {
+        return !this.data.adult;
     };
     renderFilmTableItem() {
         return `
         <tr>
             <td class="block03__table__firstcol">
-                <input type="checkbox" id="${this.getId()}" class="visuallyhidden">
+                <input type="checkbox" id="${this.#getId()}" class="visuallyhidden">
     
-                <label for="${this.getId()}">
+                <label for="${this.#getId()}">
                     <svg width="11" height="9" viewBox="0 0 11 9" fill="white"
                         xmlns="http://www.w3.org/2000/svg">
                         <path class="checkMark__path" fill-rule="evenodd" clip-rule="evenodd"
@@ -37,9 +38,9 @@ class Film {
                     </svg>
                 </label>
             </td>
-            <td>${this.getStart()}</td>
-            <td><a href="https://www.kinopoisk.ru/film/${this.getLink()}" target="_blank">${this.getTitle()}</a> </td>
-            <td>${this.getGenre()}</td>
+            <td>${this.#getStart()}</td>
+            <td><a href="https://www.kinopoisk.ru/film/${this.#getLink()}" target="_blank">${this.#getTitle()}</a> </td>
+            <td>${this.#getGenre()}</td>
         </tr>
     `
     }
