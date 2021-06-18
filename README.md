@@ -14,6 +14,6 @@ npm install --save @babel/polyfill
 ## Запуск
 Запустить команды
 ```shell
-npx babel js -d target --watch
+npx babel js -d target --watch --source-maps
 ```
 
