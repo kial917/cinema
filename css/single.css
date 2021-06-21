@@ -1,0 +1,318 @@
+/* Модификация хэддера */
+
+.single-header {
+    height: 127px;
+    background: linear-gradient(89.92deg, #251A1B 24.47%, #4F272F 64.85%);
+}
+
+/* БЛОК 1 - Блок с детализацией фильма */
+
+.single__block01__filmcontainer {
+    position: relative;
+    max-width: 95.98%;
+    /* height: 592px; */
+    background: #E5E5E5;
+    margin: 25px auto 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.single__block01__line {
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.13);
+    ;
+}
+
+.single__block01__leftside {
+    min-height: 511px;
+    flex-basis: 50%;
+    /* padding: 40px 0 40px 30px; */
+    border-right: 1px solid rgba(0, 0, 0, 0.13);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.single__block01__img {
+    width: 82.15%;
+}
+
+.single__block01__rightside {
+    min-height: 592px;
+    flex-basis: 50%;
+}
+
+.single__block01__descwrapper {
+    margin-left: 7%;
+    height: 100%;
+}
+
+.single__block01__descfirst {
+    font-weight: 600;
+    font-size: 3.75rem;
+    line-height: 4.875rem;
+    /* identical to box height */
+    color: #333333;
+    margin: 6px;
+}
+
+.single__block01__descsecond {
+    margin-top: 26px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.single__block01__starrating>* {
+    margin-left: 1px;
+}
+
+.single__block01__starrating div:last-child {
+    margin-left: 7.5px;
+}
+
+.single__block01__starrating {
+    display: flex;
+}
+
+.single__block01__numrating {
+    font-size: 0.875rem;
+    line-height: 1.28rem;
+    /* identical to box height */
+    color: #A1A1A1;
+}
+
+.single__block01__otherrating {
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+}
+
+.single__block01__numotherrating {
+    font-family: IBM Plex Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.6875rem;
+    line-height: 0.875rem;
+    color: #A3CC40;
+}
+
+.single__block01__autorotherrating {
+    font-family: IBM Plex Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.8125rem;
+    line-height: 1.0625rem;
+    /* identical to box height */
+    color: #A1A1A1;
+    margin-left: 2px;
+}
+
+.single__block01__descthird {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.single__block01__descthird>* {
+    display: flex;
+    margin-right: 6%;
+}
+
+.single__block01__datewrap {
+    display: flex;
+}
+
+.single__block01__descthird div div {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 14px;
+    color: #4C4D4F;
+    margin-left: 6px;
+}
+
+.single__block01__descfour {
+    font-size: 0, 75rem;
+    line-height: 1rem;
+    color: #A1A1A1;
+    margin-top: 28px;
+    margin-right: 17.56%;
+}
+
+.single__block01__descfifth {
+    margin-right: 17.56%;
+    margin-top: 38px;
+}
+
+.descrow {
+    display: flex;
+    border-bottom: 0.5px solid rgba(161, 161, 161, 0.22);
+    margin-top: 6px;
+}
+
+.single__block01__descfifth div:last-of-type {
+    border-bottom: transparent;
+}
+
+.descrow div:first-child {
+    font-size: 11px;
+    line-height: 14px;
+    color: #A3CC40;
+    width: 100px;
+}
+
+.descrow div:last-child {
+    font-size: 11px;
+    line-height: 14px;
+    color: #696969;
+}
+
+.single__block01__descfifth div:last-of-type div:last-of-type {
+    font-family: IBM Plex Sans;
+    font-style: bold;
+    font-weight: 900;
+    font-size: 11px;
+    line-height: 14px;
+    color: #2F2E2E;
+}
+
+/* БЛОК 2 - Блок с фильмами */
+
+.single__block02 {
+    width: 84.369%;
+    margin: 45px 7% 0;
+}
+
+.single__block02__title {
+    font-size: 15px;
+    line-height: 19px;
+    /* identical to box height */
+    color: #A1A1A1;
+}
+
+.single__block02__filmsrowstitle {
+    width: 89.47%;
+    margin: 17px auto 0;
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.single__block02__filmsrowstitle div {
+    font-size: 15px;
+    line-height: 19px;
+    /* identical to box height */
+    color: #333333;
+}
+
+.single__block02__filmsrowstitle div:last-of-type {
+    font-size: 10px;
+    line-height: 13px;
+    /* identical to box height */
+    color: #A3CC40;
+}
+
+.single__block02__filmwrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 22px;
+}
+
+.single__block02__arrowstart {
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+    border-radius: 100%;
+    background: white;
+    transition: all 0.3s cubic-bezier(0.4, 0, 1, 1);
+    position: relative;
+    border: 1px solid rgba(190, 233, 86, 1);
+    flex-shrink: 1;
+}
+
+.single__block02__arrowstart svg,  .single__block02__arrowend svg{
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 28%;
+}
+.single__block02__arrowend {
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+    border-radius: 100%;
+    background: rgba(190, 233, 86, 1);
+    transition: all 0.3s cubic-bezier(0.4, 0, 1, 1);
+    position: relative;
+    border: 1px solid white;
+    flex-shrink: 1;
+}
+
+.single__block02__films {
+    flex-basis: 850px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-shrink: 100;
+}
+
+.single__block02__filmelem {
+    width: 130px;
+    height: 180px;
+}
+
+.single__block02__filmelem div:first-of-type {
+    font-size: 12px;
+    line-height: 16px;
+    /* identical to box height */
+    color: #A3CC40;
+    margin-top: 6px;
+}
+
+.single__block02__filmelem div:last-of-type {
+    font-weight: 300;
+    font-size: 7px;
+    line-height: 9px;
+    /* identical to box height */
+    color: #333333;
+    margin-top: 3px;
+}
+
+/* Футер - модификация */
+
+footer {
+    margin-top: 20px;
+}
+
+.footer__container::before {
+    background: transparent;
+}
+
+.footer__container::after {
+    background: transparent;
+}

@@ -37,7 +37,8 @@
 
 html {
     font-family: IBM Plex Sans;
-    font-size: 1.47vw;
+    /* font-size: 1.47vw; */
+    font-size: 16px; 
     max-width: 1124px;
     min-width: 550px;
     box-sizing: border-box;
