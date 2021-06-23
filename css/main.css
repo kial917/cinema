@@ -574,8 +574,15 @@ form button {
     width: 283px;
     height: 283px;
     background: white no-repeat center / cover;
+    position:relative;
+    z-index: 1;
 }
-
+.movieSelect a{
+    width:100%;
+    height:100%;
+    z-index: 4;
+    position:relative;
+}
 .movieSelect::after {
     content: '';
     position: absolute;
@@ -585,7 +592,7 @@ form button {
     bottom: 0;
     /* background: rgba(144, 210, 61, 0.4); */
     background: rgba(0, 0, 0, .5);
-    z-index: 2;
+    z-index: 1;
     transition: all 0.4s cubic-bezier(0.4, 0, 1, 1);
 }
 
@@ -598,11 +605,12 @@ form button {
     bottom: 0;
     background: rgba(144, 210, 61, 0.4);
     /* background: rgba(0, 0, 0, .5); */
-    z-index: 2;
+    z-index: 1;
     transition: all 0.15s cubic-bezier(0.4, 0, 1, 1);
+    pointer-events: none;
 }
 
-.movieSelect:hover>* {
+.movieSelect:hover a>* {
     visibility: visible;
     transition: all 0.3s cubic-bezier(0.4, 0, 1, 1);
 }
@@ -613,7 +621,7 @@ form button {
     color: #FFF;
 }
 
-li.movieSelect h4 {
+li.movieSelect a h4 {
     font-style: normal;
     font-weight: 600;
     font-size: 1.875rem;
@@ -627,7 +635,7 @@ li.movieSelect h4 {
     visibility: hidden;
 }
 
-li.movieSelect p {
+li.movieSelect a p {
     font-style: normal;
     font-weight: 400;
     font-size: 0.75rem;
@@ -1387,3 +1395,4 @@ footer {
 /* После переноса svg вниз, перестал работать hover, я все вернул обратно, вновь начал работать */
 
 /** Медиа – правила */
+
